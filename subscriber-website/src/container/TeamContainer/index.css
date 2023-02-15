@@ -1,24 +1,20 @@
 .main_team{
     width: 100%;
-    
-    background-color: green;
 }
 .wrapper_container{
     width: 100%;
-    height: 200vh;
-    
-   background-color: skyblue;
+    /* height: 200vh; */
 }
 .team_intro{
     
-    background-color: purple;
+    /* background-color: purple; */
     width: 100%;
     height: 30vh;
-    top: 5rem;
-    position: absolute;
+    top: 7rem;
+    position: relative;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 5rem;
     align-items: center;
 
 }
@@ -26,57 +22,127 @@
 .left{
     width: 50vh;
     height: 27vh;
-    background-color: green;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: end;
+    padding-right: 5px;
+}
+.left .left-r1{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    
+    
+}
+.left .left-r1 h1{
+   font-size: 1.5rem;
+
+}
+.left .line-dash{
+    width: 5rem;
+    height: 0.3rem;
+    background-color: greenyellow;
+    border-radius: 5rem;
+}
+.left .left-r2{
+    font-size: 2rem;
 }
 .line{
-    width: 0.5rem;
-    height: 27vh;
+    width: 0.3rem;
+    height: 20vh;
     background-color: greenyellow;
+    border-radius: 5rem;
 }
 .right{
     width: 50vh;
     height: 27vh;
-    background-color: red;
+    /* background-color: red; */
+}
+.right .r1-desc{
+    padding: 5px;
 }
 .team_info{
-    background-color: yellow;
+  
     width: 100%;
     height: inherit;
     display: flex;
    
     justify-content: center;
-    position: absolute;
-    top: 40vh;
+    position: relative;
+   
+    top: 110px;
 }
 .team-r1{
     width: 80vw;
     height: inherit;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    
+   
 }
 .profileInfo{
-    width: 80vw;
+    width: 70vw;
     height: 40vh;
-    background-color: green;
+    background-color: rgba(216, 216, 216, 0.489);
     display: flex;
    justify-content: center;
-   gap: 2rem;
+   gap: 1rem;
+   border-radius: 0.5rem;
 }
 .profileInfo:nth-of-type(even){
-    background-color: black;
+    flex-direction: row-reverse;
 }
 .profileInfo .ImageBox{
     width: 30vw;
     height: 40vh;
-    background-color: white;
+    /* background-color: white; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 .profileInfo .ImageBox img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 250px;
+    
+}
+.profileInfo .ImageBox img:hover{
+    transform: scale(1.01);
     
 }
 .profileInfo .profileDesc{
-    width: 40vw;
+    width: 35vw;
     height: 40vh;
-    background-color: blue;
+    /* background-color: blue; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.profileDesc .profileDesc-r1{
+    margin-top: 2rem;
+}
+.profileDesc .profileDesc-r1 .usrname{
+    font-size: 1.5rem;
+    font-weight: bold;
     
 }
+.profileDesc .profileDesc-r1 .entitle{
+    font-size: 1rem;
+    padding-left:0.3rem;
+
+}
+.profileDesc-r2 p{
+    text-align: justify;
+}
+.profileDesc .profileDesc-r3 .socialMedia-links{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}   
