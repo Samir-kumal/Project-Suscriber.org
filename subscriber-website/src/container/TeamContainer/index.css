@@ -1,0 +1,82 @@
+.main_team{
+    width: 100%;
+    
+    background-color: green;
+}
+.wrapper_container{
+    width: 100%;
+    height: 200vh;
+    
+   background-color: skyblue;
+}
+.team_intro{
+    
+    background-color: purple;
+    width: 100%;
+    height: 30vh;
+    top: 5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.left{
+    width: 50vh;
+    height: 27vh;
+    background-color: green;
+}
+.line{
+    width: 0.5rem;
+    height: 27vh;
+    background-color: greenyellow;
+}
+.right{
+    width: 50vh;
+    height: 27vh;
+    background-color: red;
+}
+.team_info{
+    background-color: yellow;
+    width: 100%;
+    height: inherit;
+    display: flex;
+   
+    justify-content: center;
+    position: absolute;
+    top: 40vh;
+}
+.team-r1{
+    width: 80vw;
+    height: inherit;
+    background-color: red;
+}
+.profileInfo{
+    width: 80vw;
+    height: 40vh;
+    background-color: green;
+    display: flex;
+   justify-content: center;
+   gap: 2rem;
+}
+.profileInfo:nth-of-type(even){
+    background-color: black;
+}
+.profileInfo .ImageBox{
+    width: 30vw;
+    height: 40vh;
+    background-color: white;
+}
+.profileInfo .ImageBox img{
+    width: 400px;
+    height: 400px;
+    
+}
+.profileInfo .profileDesc{
+    width: 40vw;
+    height: 40vh;
+    background-color: blue;
+    
+}
