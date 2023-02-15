@@ -88,9 +88,10 @@
 .profileInfo{
     width: 70vw;
     height: 40vh;
-    background-color: rgba(216, 216, 216, 0.489);
+    /* background-color: rgba(232, 228, 228, 0.736); */
     display: flex;
    justify-content: center;
+  
    gap: 1rem;
    border-radius: 0.5rem;
 }
@@ -146,3 +147,149 @@
     gap: 1rem;
     cursor: pointer;
 }   
+
+
+@media screen and (max-width:768px) {
+    .team_intro{
+    
+    /* background-color: purple; */
+    width: 100%;
+    height: fit-content;
+    top: 7rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+
+}
+.left{
+   width: 100vw;
+    height: 15vh;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: start;
+    padding-right: 5px;
+}
+.left .left-r1{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 10px;
+    
+}
+.left .left-r1 h1{
+   font-size: 1.3rem;
+   text-transform: uppercase;
+
+}
+.left .line-dash{
+    width: 5rem;
+    height: 0.3rem;
+    background-color: red;
+    border-radius: 5rem;
+}
+.left .left-r2{
+    font-size: 2rem;
+    padding-left: 10px;
+}
+.team_info{
+  
+    width: 100%;
+    height: inherit;
+    display: flex;
+   
+    justify-content: center;
+    position: relative;
+   
+    top: 130px;
+}
+.team-r1{
+    width: 90vw;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    width: 100vw;
+    height: 30vh;
+    /* background-color: red; */
+}
+.right .r1-desc{
+    padding: 10px;
+    text-align: justify;
+}
+.line{
+    display: none;
+}
+.profileInfo{
+    width: 90vw;
+    height: 55vh;
+    /* background-color: rgba(232, 228, 228, 0.736); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 1rem; */
+    border-radius: 0.5rem;
+     align-items: center;
+}
+.profileInfo:nth-of-type(even){
+   
+    flex-direction: column;
+}
+.profileInfo .ImageBox{
+        margin-top: 10px;
+    width: 80vw;
+    height: 40vh;
+    /* background-color: white; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileInfo .ImageBox img{
+    width: 300px;
+    height: 250px;
+    
+}
+.profileInfo .ImageBox img:hover{
+    transform: scale(1.01);
+    
+}
+.profileInfo .profileDesc{
+   width: 60vw;
+    height: 15vh;
+    /* background-color: blue; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.profileDesc .profileDesc-r1{
+    width: 65vw;
+    margin-top: 0rem;
+}
+.profileDesc .profileDesc-r1 .usrname{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.profileDesc .profileDesc-r1 .entitle{
+    font-size: 1rem;
+    padding-left:0.3rem;
+
+}
+.profileDesc-r2 {
+    display: none;
+}
+.profileDesc .profileDesc-r3 {
+    display: none;
+}   
+
+}
