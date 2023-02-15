@@ -263,7 +263,7 @@ const Header = () => {
                         </li>
                         <span className="h-40 w-[2px] opacity-10 rounded-xl mt-2 bg-black left-[75%] absolute"></span>
                         <li>
-                          <a href="">Our Team</a>
+                          <a href="/team">Our Team</a>
                           <p className="text-sm font-light ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
                         </li>
