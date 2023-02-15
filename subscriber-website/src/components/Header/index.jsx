@@ -116,8 +116,8 @@ const Header = () => {
       <header style={navbarStyle}
         className={
           Navbar
-            ? "Navbar sticky text-black  h-20 w-full  lg:flex items-center justify-between"
-            : "Navbar fixed text-white z-10 h-20 w-full lg:flex items-center justify-between"
+            ? "Navbar sticky text-black top-0  h-20 w-full  lg:flex items-center justify-between"
+            : "Navbar fixed text-white top-0 z-10 h-20 w-full lg:flex items-center justify-between"
         }
       >
         <div className="logo translate-x-28">
