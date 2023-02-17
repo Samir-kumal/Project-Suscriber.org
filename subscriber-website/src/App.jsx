@@ -4,7 +4,11 @@ import Home from './pages/HomePage'
 import Err404page from './pages/Err404page'
 import Contact from './pages/ContactPage';
 import './index.css'
+import './container/PortfolioContainer/index.css'
+import './container/AboutUsContainer/index.css'
+import Portfolio_section from './pages/Portfolio_section'; 
 import TeamPage from './pages/teamPage';
+import AboutUsPage from './pages/AboutUsPage';
 function App() {
   return (
     <>
@@ -13,8 +17,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<TeamPage />} />
-          {/* <Route path="/about" element={<AboutUs />} />
-          <Route path="/portfolio" element={<Portfolio_section />} /> */}
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/portfolio" element={<Portfolio_section />} />
           <Route path="/*" element={<Err404page />} />
         </Routes>
       </BrowserRouter>

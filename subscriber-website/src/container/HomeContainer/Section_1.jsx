@@ -5,8 +5,8 @@ import gif from '../../Images/135470-work-place-animation-unscreen.gif'
 const Section_1 = () => {
   return (
     <div>
-      <section className="relative lg:h-[780px] h-fit bg-black ">
-        <div className="main-landing flex relative w-full h-[780px] bg-white">
+      <section className="relative h-fit bg-black ">
+        <div className="main-landing flex relative w-full h-[750px] bg-white">
         <div className="absolute right-10 bottom-0">
         <lottie-player 
   src="https://assets6.lottiefiles.com/packages/lf20_k0sUtnckyH.json"  

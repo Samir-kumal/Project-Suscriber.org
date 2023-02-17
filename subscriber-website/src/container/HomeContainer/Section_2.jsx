@@ -5,8 +5,8 @@ import Logo3 from "/src/assets/Branding-logo.png";
 import Logo4 from "/src/assets/Web-development-logo.png";
 import Logo5 from "/src/assets/Reception-logo.png";
 import Logo6 from "/src/assets/UI-UX-logo.png";
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Section_2 = () => {
 
@@ -15,16 +15,12 @@ const Section_2 = () => {
   }, []);
   return (
     <div>
-      <section className="Section-2-main lg:h-[780px] h-fit " style={{backgroundColor:"green"}}>
+      <section className="Section-2-main h-fit ">
         <div className="cards-section w-[80%] m-auto h-fit">
-          <div className="desc h-32 flex justify-start gap-2 items-center">
-          
-            <h1 className="text-3xl font-serif font-bold" >
+          <div className="desc h-32 flex justify-center items-center">
+            <h1 className="text-3xl font-serif font-bold">
               We Provide The Best Service With Our Tools
             </h1>
-            <div className="breakline" style={{width:"10vw", height:"0.5vh", backgroundColor:"red" , borderRadius:"20rem"}}>
-
-          </div>
           </div>
           <div data-aos="fade-up"
      data-aos-duration="4000">
@@ -63,7 +59,7 @@ const Section_2 = () => {
                   <div className="logo-description">
                     <img src={Logo2} alt="" height="80px" width="80px" />
                   </div>
-                  <div className="w-full h-[1px] mt-0 bg-gray-400 opacity-60 "></div>
+                  <div className="w-full h-[1px] mt-4 bg-gray-400 opacity-60 "></div>
 
                   <p className="text-gray-700 text-base mb-4">
                     Some quick example text to build on the card title and make
@@ -87,7 +83,7 @@ const Section_2 = () => {
                   <div className="logo-description">
                     <img src={Logo3} alt="" height="80px" width="80px" />
                   </div>
-                  <div className="w-full h-[1px] mt-0 bg-gray-400 opacity-60 "></div>
+                  <div className="w-full h-[1px] mt-4 bg-gray-400 opacity-60 "></div>
 
                   <p className="text-gray-700 text-base mb-4">
                     Some quick example text to build on the card title and make
@@ -115,7 +111,7 @@ const Section_2 = () => {
 
                   <div className="w-full h-[1px] mt-4 bg-gray-400 opacity-60 "></div>
 
-                  <p className="text-gray-700 text-base mt-0 mb-4">
+                  <p className="text-gray-700 text-base mt-4 mb-4">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>

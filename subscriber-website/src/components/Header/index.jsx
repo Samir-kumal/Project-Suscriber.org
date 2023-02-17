@@ -87,7 +87,7 @@ const Header = () => {
     };
   }, []);
 
-  if (location.pathname === '/about' || location.pathname === '/portfolio') {
+  if (location.pathname === '/about' || location.pathname === '/portfolio' || location.pathname === '/contact') {
     navbarStyle = { backgroundColor: 'transparent' }
   } else if (location.pathname === '/') {
     navbarStyle = { backgroundColor: 'transparent' }

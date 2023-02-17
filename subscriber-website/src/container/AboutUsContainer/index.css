@@ -1,0 +1,49 @@
+.AboutUs_section{
+    background-image: url(../../Images/Wave-10s-1366px.svg);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    text-shadow:  2px 2px 10px rgba(0, 0, 0, 0.2);
+  
+  }
+.Process-Steps div div{
+ display: flex;
+ padding: 10px;
+}
+.Steps-Image{
+  justify-content: center ;
+  /* background: #000; */
+  width: 50%;
+}
+.Steps-Image:nth-child(2){
+  justify-content: center ;
+  /* background: #c21313; */
+  width: 50%;
+}
+
+.Steps-Image:nth-child(1){
+  justify-content: start ;
+  /* background: #c21313; */
+  width: 50%;
+}
+.first-img{
+  transform: translateX(190px);
+
+}
+.Steps-description{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  /* background: #ff4747; */
+  
+
+}
+.Steps-description div{
+  /* background: #000; */
+  flex-direction: column;
+width: 75%;
+
+}
+.Steps-description p{
+width: 75%;
+
+}

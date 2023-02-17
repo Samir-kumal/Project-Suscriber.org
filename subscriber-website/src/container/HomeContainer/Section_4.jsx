@@ -4,7 +4,7 @@ import KPoli from '/src/images/KP_ba.jpg';
 import Prachanda from '/src/images/prachanda.jpg';
 import Ravi from '/src/images/RAvi.jpg';
 import Deuba from '/src/images/deuba.jpg';
-
+// import "/src/App.css";
 
 const Section_4 = () => {
   const sliderRef = useRef(null);
@@ -55,13 +55,8 @@ const Section_4 = () => {
 
 
   return (
-    <div className="testimonials  xs:w-[100%] md:w-[100%] xl:w-[80%]  h-[500px]  m-auto  ">
-     <div className="testimonials-head h-32 w-[100%]  flex justify-start items-center gap-2">
-     <h2 className="font-serif font-bold text-3xl">Testimonials</h2>
-      <div className="breakline" style={{width:"10vw", height:"0.5vh", backgroundColor:"red", borderRadius:"5rem"}}>
-
-</div>
-     </div>
+    <div data-aos = "fade-up" data-aos-duration="1000" className="testimonials  xs:w-[100%] md:w-[100%] xl:w-[80%]  h-[350px]  m-auto  ">
+      <h2 className="font-serif font-bold text-black">Testimonials</h2>
       <p className="ml-4 font-semibold font-serif text-gray-700">What our client's say about us</p>
       <Slider  ref={sliderRef} {...settings}>
         
