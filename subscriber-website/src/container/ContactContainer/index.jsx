@@ -137,7 +137,7 @@ const ContactContainer = () => {
                   required={true}
                   onChange={handleInputChange}
                   placeholder="Full name"
-                  name="name"
+                 
                 />
               </div>
               <div>
@@ -151,7 +151,7 @@ const ContactContainer = () => {
 
                   required={true}
                   onChange={handleInputChange}
-                  name = "email"
+                 
                 />
               </div>
               <div>
