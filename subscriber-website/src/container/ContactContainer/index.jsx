@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import axios from "axios";
-import register from "../../service/newsletter.js";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ContactusImage from "../../Images/ContactusImage.png";
 import MapImage from "../../Images/mapImage.png";
 import "./index.css";
 import { NavLink } from "react-router-dom";
+import Service from "../../service/contact";
 const ContactContainer = () => {
+  const [result, setResult] = useState({});
+  const [isSending, setSending] = useState(false);
+  const [isError, setError] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phoneno:"",
+    subject:"",
     message: "",
   });
 
@@ -30,33 +37,17 @@ const ContactContainer = () => {
     });
   };
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = async(event) => {
     event.preventDefault();
     setFormSubmitted(true);
+      const res = await Service.Contact(formData);
+      const {data} = res;
+      setResult(data);
+      
 
-    axios
-      .post("/api/submit-form", formData)
-      .then((response) => {
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-        alert("Form submitted successfully");
-      })
-      .catch((error) => {
-        console.error(error);
-        alert("An error occurred while submitting the form");
-      });
   };
-  console.log(formData.name, formData.email, formData.message);
-  const [res, setRestult] = useState("");
-  let data;
-  const check = async () => {
-    data = await register.register();
-
-    setRestult(data.data.msg);
-  };
+  // console.log(formData.name, formData.email,formData.phoneno,formData.subject, formData.message);
+  
 
   return (
     <>
@@ -131,7 +122,7 @@ const ContactContainer = () => {
             </div>
           </div>
           <div className="w-[50%] ">
-            <form>
+            <form onSubmit={handleFormSubmit}>
             <h1 className="m-4 translate-x-12 text-2xl font-bold">
               Message us
             </h1>
@@ -140,7 +131,7 @@ const ContactContainer = () => {
                 {" "}
                 <input
                   type="text"
-                  value={formData.name}
+                  name="name"
                   required={true}
                   onChange={handleInputChange}
                   placeholder="Full name"
@@ -149,20 +140,20 @@ const ContactContainer = () => {
               <div>
                 {" "}
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Email"
-                  value={formData.email}
+                  name="email"
                   required={true}
                   onChange={handleInputChange}
                 />
               </div>
               <div>
                 {" "}
-                <input type="text" placeholder="Phone" />
+                <input type="text" placeholder="Phone" name="phoneno" onChange={handleInputChange}/>
               </div>
               <div>
                 {" "}
-                <input type="text" placeholder="Subject" />
+                <input type="text" placeholder="Subject" name="subject" onChange={handleInputChange} />
               </div>
             </div>
             <div>
@@ -170,10 +161,10 @@ const ContactContainer = () => {
                 className="text-comment p-3 mx-4"
                 name="message"
                 placeholder="Write us a message"
-                id=""
+                
                 value={formData.message}
                 onChange={handleInputChange}
-              />
+              />{isSending}
               <input
                 className="inputField mx-4 my-6 text-xl font-bold translate-x-36 bg-red-400 py-4 px-10 text-white rounded-xl w-[20rem]"
                 type="submit"

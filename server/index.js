@@ -1,19 +1,21 @@
 const express = require('express');
 const app = express();
-const dotenv = require('dotenv');
+require('dotenv').config();
 const port = process.env.PORT || 8080;
 const cors = require('cors');
-const dbCon = require('../db/condb');
-const signuproute = require('../routes/signupuser');
+const dbCon = require('./db/condb');
+const signuproute = require('./routes/signupuser');
 
-const checkApiKey = require('../middleware/apiKey');
+const checkApiKey = require('./middleware/apiKey');
 
-const autoRunTask = require('../controllers/newsController');
+const autoRunTask = require('./controllers/newsController');
+const contactRoute = require('./routes/contactRoute');
 app.use(cors());
-app.get('/',(req,res)=>{
+app.get('/',checkApiKey,(req,res)=>{
    return res.status(200).send({sucess:true,msg:"Subscriber org webstie welcome.."});
 })
 app.use('/api/newsletter',checkApiKey ,signuproute);
+app.use('/api/submit-form',checkApiKey ,contactRoute);
 
 app.get('*',(req,res)=>{
     res.status(404).send({sucess:false,msg:"Page not found!"});
