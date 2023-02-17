@@ -1,6 +1,7 @@
+require('dotenv').config();
 const clients = {
-    client1: "abcdefghijklmno",
-    client2: "pqrstuvwxyz1234"
+    client1: process.env.apiKey1,
+    client2: process.env.apiKey2
   };
   
   const checkApiKey = (req, res, next) => {
