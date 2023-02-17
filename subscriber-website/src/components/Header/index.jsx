@@ -280,8 +280,8 @@ const Header = () => {
               >
                 <NavLink to="/about">About us</NavLink>
                 {subMenu3 && (
-                    <div  onMouseOver={() => setSubMenu3(true)}
-                    onMouseLeave={() => setSubMenu3(false)}
+                    <div  onMouseOver={() => setSubMenu1(true)}
+                    onMouseLeave={() => setSubMenu1(false)}
                     className="sub-menu
                     shadow-xl lg:rounded z-10  p-4 bg-white lg:absolute  lg:left-[-600px]  lg:h-[200px] 
                         lg:opacity-1 lg:translate-y-[2.5rem] ">
