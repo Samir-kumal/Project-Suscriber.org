@@ -88,7 +88,7 @@ const ContactContainer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>  
       <div className="Main-body-contact">
         <div className=" h-fit  py-4">
           <div className="m-auto flex w-[1350px]">
@@ -137,31 +137,31 @@ const ContactContainer = () => {
             </h1>
             <div className="form-fillup w-full  m-4 grid grid-cols-2 gap-4">
               <div>
-                {" "}
+              
                 <input
                   type="text"
-                  value={formData.name}
+                  // value={formData.name}
                   required={true}
                   onChange={handleInputChange}
                   placeholder="Full name"
                 />
               </div>
               <div>
-                {" "}
+                
                 <input
                   type="text"
                   placeholder="Email"
-                  value={formData.email}
+                  // value={formData.email}
                   required={true}
                   onChange={handleInputChange}
                 />
               </div>
               <div>
-                {" "}
+             
                 <input type="text" placeholder="Phone" />
               </div>
               <div>
-                {" "}
+            
                 <input type="text" placeholder="Subject" />
               </div>
             </div>

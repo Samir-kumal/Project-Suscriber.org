@@ -133,12 +133,7 @@ body {
   width: 120px;
 }
 
-.menu-item:nth-child(2) .sub-menu {
-  /* background-color: aqua; */
-  /* display: none; */
-  /* visibility: hidden; */
-  transition: 1s ease-in all;
-}
+
 .main-landing {
   background-image: url(./Images/Wave-10s-1366px.svg);
   background-repeat: no-repeat;
@@ -592,70 +587,125 @@ body {
   .menu-item:nth-child(6) {
     /* background: #000; */
     padding: 2rem 1rem;
+    /* position: relative; */
   }
-
-  .menu-item:nth-child(2)::after,
-  .menu-item:nth-child(3)::after,
-  .menu-item:nth-child(4)::after,
-  .menu-item:nth-child(5)::after,
-  .menu-item:nth-child(6)::after {
-    z-index: -1;
+  .menu-home{
+    position: relative;
+  }
+ 
+  .menu-services{
+    position: relative;
+  }
+  .menu-services::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: #ffffff;
+    left: 15px;
+    bottom: 6px;
     transition: 0.3s linear;
-    content: "";
-    position: absolute;
-    background: rgb(255, 255, 255);
 
-    height: 2px;
-    width: 0px;
   }
-  .menu-item:nth-child(1)::after {
-    height: 2px;
-    width: 0px;
-    background: rgb(255, 255, 255);
+  .menu-services:hover:after{
+    width: 75px;
+  }
+  .menu-pricing{
+    position: relative;
+  }
+  .menu-pricing::after{
     position: absolute;
     content: "";
-    z-index: -1;
-    width: 60px;
-    top: 78px;
-    left: 20.7%;
-    right: 20%;
+    width: 0px;
+    height: 3px;
+    background: #ffffff;
+    bottom: 6px;
+    left: 10px;
+    transition: 0.3s linear;
+    
   }
-  .menu-item:nth-child(2)::after {
-    top: 78px;
-    left: 28.2%;
+  .menu-pricing:hover:after{
+    width: 70px;
   }
-  .menu-item:nth-child(3)::after {
-    top: 78px;
-    left: 36.5%;
+  
+  .menu-portfolio{
+    position: relative;
+    /* background: #000; */
   }
-  .menu-item:nth-child(4)::after {
-    top: 78px;
-    left: 44.5%;
-  }
-  .menu-item:nth-child(5)::after {
-    top: 78px;
-    left: 52.6%;
-  }
-  .menu-item:nth-child(6)::after {
-    top: 78px;
-    right: 31.8%;
+  .menu-portfolio::after{
+    content: "";
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    transition: 0.3s linear;
+    bottom: 6px;
+    left: 1.1rem;
+    width: 0px;
   }
 
-  .menu-item:nth-child(2):hover:after {
+  .menu-portfolio:hover:after{
+    width: 75px;
+  }
+  
+ 
+
+  .menu-about{
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .menu-about:after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background: #fff;
+    bottom: 6px;
+    transition: 0.3s linear;
+
+  }
+  .menu-about:hover:after{
+    width: 75px;
+  }
+  .menu-careers{
+    position: relative;
+  }
+  .menu-careers::after{
+    position: absolute;
+    content: "";
+    background: #ffffff;
+    width: 0px;
+    height: 3px;
+    bottom: 6px;
+    left: 19px;
+    transition: 0.3s linear;
+
+  }
+  .menu-careers:hover:after{
     width: 70px;
   }
-  .menu-item:nth-child(3):hover:after {
-    width: 60px;
+  .menu-contact{
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
-  .menu-item:nth-child(4):hover:after {
-    width: 60px;
+  .menu-contact::after{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 3px;
+    bottom: 6px;
+    left: 20px;
+    background: #ffffff;
+
+    transition: 0.3s linear;
+
   }
-  .menu-item:nth-child(5):hover:after {
-    width: 70px;
+  .menu-contact:hover:after{
+    width: 90px;
   }
-  .menu-item:nth-child(6):hover:after {
-    width: 70px;
-  }
+
+  
 
   .Navbar.sticky {
     position: fixed;

@@ -1,3 +1,10 @@
+.Team_section{
+    background-image: url(../../Images/Wave-10s-1366px.svg);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    text-shadow:  2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
 .main_team{
     width: 100%;
 }
