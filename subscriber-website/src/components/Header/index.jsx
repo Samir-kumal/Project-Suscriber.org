@@ -266,7 +266,7 @@ const Header = () => {
               <li className="menu-portfolio menu-item  text-xl px-4">
                 <NavLink to="/portfolio">Portfolio</NavLink>
               </li>
-              <li 
+              <li
                 onClick={() =>
                   !subMenu3 ? setSubMenu3(true) : setSubMenu3(false)
                 }
@@ -276,7 +276,7 @@ const Header = () => {
                 onMouseLeave={() =>
                   window.innerWidth > 1024 && setSubMenu3(false)
                 }
-                className="menu-portfolio menu-about lg:text-white sm:text-black text-xl px-4"
+                className="menu-portfolio menu-about text-xl px-4"
               >
                 <NavLink to="/about">About us</NavLink>
                 {subMenu3 && (
