@@ -17,7 +17,9 @@
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.1",
     "react-slick": "^0.29.0",
-    "tw-elements": "^1.0.0-alpha13"
+    "react-typewriter-effect": "^1.1.0",
+    "tw-elements": "^1.0.0-alpha13",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

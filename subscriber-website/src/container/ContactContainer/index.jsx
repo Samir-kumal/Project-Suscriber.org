@@ -54,25 +54,25 @@ const ContactContainer = () => {
       <Header />
       <div>
         <div className="ContactUs_section w-full h-[700px] flex flex-col-reverse lg:flex-row ">
-          <div className="flex flex-col   w-[50%]">
-            <div className="translate-y-24">
+          <div className="flex flex-col  w-full lg:w-[50%]">
+            <div className=" w-full translate-y-28">
               <lottie-player
                 src="https://assets7.lottiefiles.com/packages/lf20_xt3zjwah.json"
                 background="transparent"
                 speed="1"
-                style={{ width: "762px", height: "762px"  }}
+
                 loop
                 autoplay
               />
             </div>
           </div>
-          <div className="  w-[50%] lg:translate-y-0 lg:translate-x-1 translate-x-32 translate-y-[500px] lg:flex items-end justify-center  ">
-            <div className="h-[200px] flex items-center translate-y-[-6rem] flex-col ">
-              <h2 className="contact-us-Title text-6xl lg:text-6xl font-serif font-bold text-center">
+          <div className=" w-full lg:w-[50%] lg:translate-y-0  lg:translate-x-2 translate-y-[730px] lg:flex items-end justify-center  ">
+            <div className="h-[120px] lg:static  left-0  translate-y-[-26rem] flex items-center lg:translate-y-[-12rem] flex-col ">
+              <h2 className="text-white contact-us-Title text-4xl lg:text-6xl font-serif font-bold text-center">
                 Contact Us
               </h2>
               <br />
-              <p className="font-semibold text-lg lg:text-2xl text-center">
+              <p className=" text-white font-semibold text-lg lg:text-2xl text-center">
                 Do you have anything in your mind to tell us? Please don't
                 hesitate to get in touch with us.
               </p>
@@ -83,24 +83,23 @@ const ContactContainer = () => {
       <div className="h-fit Main-body-contact">
         <div className=" h-fit  py-4">
           <div className="m-auto flex w-[1250px]">
-            <div className=" w-[50%] h-24 lg:h-fit flex justify-center   flex-col ">
+            <div className=" w-[50%] h-24 lg:h-[400px] flex justify-center   flex-col ">
               <div className="translate-y-12">
-                <h1 className="font-bold text-2xl lg:text-4xl">
+                <h1 className="font-bold text-2xl w-screen lg:text-4xl">
                   We Would Love To Hear From You
                 </h1>
-                <p className="text-lg lg:text-xl py-1">Our mobile no : +9779806133772</p>
-                <p className="text-lg lg:text-xl py-1">Our Telephn no: 01-521345</p>
-                <p className="text-lg lg:text-xl py-1">Our Email : suscriber@gmail.com</p>
+                <p className="w-screen text-lg lg:text-xl py-1">Our mobile no : +9779806133772</p>
+                <p className="w-screen text-lg lg:text-xl py-1">Our Telephn no: 01-521345</p>
+                <p className="w-screen text-lg lg:text-xl py-1">Our Email : suscriber@gmail.com</p>
               </div>
             </div>
 
             <div className=" flex h-[500px]  justify-center w-[50%]">
               <img
-                className="translate-y-12 lg:static top-[690px] left-40 absolute "
+                className="translate-y-12 lg:static top-[690px] right-0 -z-10 absolute "
                 src={ContactusImage}
                 alt=""
-                height={500}
-                width={500}
+              
               />
             </div>
           </div>
@@ -113,9 +112,9 @@ const ContactContainer = () => {
                 Want to get in touch? We'd love to hear from you.
               </p>
             </div>
-            <div className="flex lg:w-full w-[97%] items-end h-[90%] ">
+            <div className="flex lg:w-full  w-screen items-end h-[90%] ">
               <img
-                className=" h-[88%] border-[3px] rounded-lg border-red-400 w-full flex"
+                className=" h-[88%] border-[3px] ml-2 w-[95%] rounded-lg border-red-400 flex"
                 src={MapImage}
                 alt=""
               />
@@ -127,10 +126,10 @@ const ContactContainer = () => {
               Message us
             </h1>
             <div className="form-fillup w-full lg:w-[600px]  m-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
-              <div>
+              <div className="w-screen lg:w-[95%]">
               
                 <input
-                 className = "w-[95%] lg:w-full"
+                 className = "w-[95%]"
                   type="text"
 
                   name="name"
@@ -141,10 +140,10 @@ const ContactContainer = () => {
                  
                 />
               </div>
-              <div>
+              <div className="w-screen lg:w-[95%]">
                 
                 <input
-                 className = "w-[95%] lg:w-full"
+                 className = "w-[95%] "
 
                   type="email"
                   placeholder="Email"
@@ -157,21 +156,21 @@ const ContactContainer = () => {
                  
                 />
               </div>
-              <div>
+              <div className="w-screen lg:w-[95%]">
 
                 {" "}
                 <input 
-                 className = "w-[95%] lg:w-full"
+                 className = "w-[95%] "
 
                  type="text"
                   placeholder="Phone" 
                   name="phoneno"
                    onChange={handleInputChange}/>
               </div>
-              <div>
+              <div className="w-screen lg:w-[95%]">
                 {" "}
                 <input 
-                 className = "  w-[95%] lg:w-full"
+                 className = "  w-[95%] "
 
                 type="text"
                  placeholder="Subject" 
@@ -182,9 +181,9 @@ const ContactContainer = () => {
               </div>
               
             </div>
-            <div>
+            <div className="w-screen lg:w-[95%]"> 
               <textarea 
-                className="text-comment p-3 mx-4"
+                className="text-comment w-[95%] p-3 mx-4"
                 name="message"
                 placeholder="Write us a message"
                 
@@ -192,7 +191,7 @@ const ContactContainer = () => {
                 onChange={handleInputChange}
               />{isSending}
               <input
-                className="inputField mx-4 my-6 text-xl font-bold translate-x-36 bg-red-400 py-4 px-10 text-white rounded-xl w-[20rem]"
+                className="inputField mx-4 my-6 text-xl font-bold  bg-red-400 py-4 px-10 text-white rounded-xl w-[95%]"
                 type="submit"
                 value="Submit"
               />

@@ -5,30 +5,63 @@
     text-shadow:  2px 2px 10px rgba(0, 0, 0, 0.2);
   
   }
+  .About-us-title{
+    position: relative;
+  }
+  .About-us-title::before{
+    position: relative;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: 50%;
+    right: 0px;
+    margin-right: 10rem;
+    background: #000;
+  }
+  .About-us-title::after{
+    position: relative;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: 50%;
+    left: 0px;
+    margin-left: 10rem;
+    background: #000;
+  }
+  .Introduction-title{
+    position: relative;
+  }
+  .Introduction-title::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #000;
+    top: 50%;
+    margin-right: 13.5rem;
+    right: 0;
+  }
+  .Introduction-title::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: #000;
+    top: 50%;
+    margin-left: 13.5rem;
+    left: 0;
+  }
 .Process-Steps div div{
  display: flex;
  padding: 10px;
 }
-.Steps-Image{
-  justify-content: center ;
-  /* background: #000; */
-  width: 50%;
-}
-.Steps-Image:nth-child(2){
-  justify-content: center ;
-  /* background: #c21313; */
-  width: 50%;
-}
+/*  */
 
-.Steps-Image:nth-child(1){
-  justify-content: start ;
-  /* background: #c21313; */
-  width: 50%;
-}
-.first-img{
-  transform: translateX(190px);
 
-}
+
+
 .Steps-description{
   display: flex;
   width: 50%;
