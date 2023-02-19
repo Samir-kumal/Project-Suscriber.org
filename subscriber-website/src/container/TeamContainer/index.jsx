@@ -11,35 +11,34 @@ const TeamContainer = () => {
   return (
     <div className="main_team">
       <Header />
-      <div className="Team_section w-full h-[600px] flex">
-      <div className="flex flex-col   w-[50%]">
-            <div className="">
-              <lottie-player
+      <div className="Team_section w-full h-[600px] flex flex-col-reverse">
+      <div className="flex flex-col relative  w-[50%]">
+            <div className=" absolute bottom-0 translate-y-[8rem]
+             w-[600px]">
+              <lottie-player 
                 src="https://assets7.lottiefiles.com/packages/lf20_xt3zjwah.json"
                 background="transparent"
                 speed="1"
-                style={{ width: "762px", height: "762px" }}
                 loop
                 autoplay
               />
             </div>
           </div>
-          <div className=" w-[50%] flex items-end justify-center  ">
-            <div className="h-[200px] flex items-center translate-y-[-6rem] flex-col ">
-              <h2 className="contact-us-Title text-6xl font-serif font-bold text-center">
+          <div className=" w-[50%]  flex items-end justify-center  ">
+            <div className="h-[200px] absolute top-60 left-0 flex items-center translate-y-[-6rem] flex-col ">
+              <h2 className="contact-us-Title text-4xl lg:text-6xl font-serif font-bold text-center">
                 About Us
               </h2>
               <br />
-              <p className="font-semibold text-xl text-center">
+              <p className="font-semibold text-lg lg:w-[] w-[80%] lg:text-xl text-center">
               Suscriber.org is a revenue-based project company specializing in the IT sector. We are especially working in the field of website design and software development in Nepal. 
 
-Not only that, our other services include mobile app development, digital marketing and graphics designing.
               </p>
             </div>
           </div>
       </div>
 
-      <div className="wrapper_container">
+      <div className="wrapper_container ">
         <div className="team_intro">
           <div className="left">
             <div className="left-r1">

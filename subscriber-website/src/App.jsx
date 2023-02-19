@@ -7,8 +7,8 @@ import './index.css'
 import './container/PortfolioContainer/index.css'
 import './container/AboutUsContainer/index.css'
 import Portfolio_section from './pages/Portfolio_section'; 
-import TeamPage from './pages/teamPage';
 import AboutUsPage from './pages/AboutUsPage';
+import TeamPage from "./pages/TeamPage"
 function App() {
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<TeamPage />} />
+
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/portfolio" element={<Portfolio_section />} />
           <Route path="/*" element={<Err404page />} />

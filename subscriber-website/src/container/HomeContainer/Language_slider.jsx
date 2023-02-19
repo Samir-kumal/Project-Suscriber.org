@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
-import KPoli from "/src/images/KP_ba.jpg";
-import Prachanda from "/src/images/prachanda.jpg";
-import Ravi from "/src/images/RAvi.jpg";
-import Deuba from "/src/images/deuba.jpg";
+
 
 
 const Language_slider = () => {

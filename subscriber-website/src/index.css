@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 /* @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
 * {
   margin: 0;
   padding: 0;
@@ -768,4 +768,12 @@ footer{
 footer .section-1{
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width:1024px) {
+  footer .section-1{
+    text-shadow: none;
+    font-family: sans-serif;
+    color: black;
+  }
 }

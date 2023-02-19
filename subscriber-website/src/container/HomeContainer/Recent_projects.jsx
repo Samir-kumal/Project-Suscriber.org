@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 
-import Deuba from "/src/images/deuba.jpg";
 // import "/src/App.css";
 
 const Recent_projects = () => {

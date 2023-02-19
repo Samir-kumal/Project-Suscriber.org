@@ -1,5 +1,5 @@
 import React from "react";
-import LottiePlayer from "./Lottieplayer";
+import LottiePlayer from "./LottiePlayer";
 
 const Section_3 = () => {
   return (

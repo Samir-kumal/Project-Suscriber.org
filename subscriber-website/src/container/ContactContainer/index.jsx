@@ -53,26 +53,26 @@ const ContactContainer = () => {
     <>
       <Header />
       <div>
-        <div className="ContactUs_section w-full h-[700px] lg:flex">
+        <div className="ContactUs_section w-full h-[700px] flex flex-col-reverse lg:flex-row ">
           <div className="flex flex-col   w-[50%]">
             <div className="translate-y-24">
               <lottie-player
                 src="https://assets7.lottiefiles.com/packages/lf20_xt3zjwah.json"
                 background="transparent"
                 speed="1"
-                style={{ width: "762px", height: "762px" }}
+                style={{ width: "762px", height: "762px"  }}
                 loop
                 autoplay
               />
             </div>
           </div>
-          <div className=" w-[50%] flex items-end justify-center  ">
+          <div className="  w-[50%] lg:translate-y-0 lg:translate-x-1 translate-x-32 translate-y-[500px] lg:flex items-end justify-center  ">
             <div className="h-[200px] flex items-center translate-y-[-6rem] flex-col ">
-              <h2 className="contact-us-Title text-6xl font-serif font-bold text-center">
+              <h2 className="contact-us-Title text-6xl lg:text-6xl font-serif font-bold text-center">
                 Contact Us
               </h2>
               <br />
-              <p className="font-semibold text-2xl text-center">
+              <p className="font-semibold text-lg lg:text-2xl text-center">
                 Do you have anything in your mind to tell us? Please don't
                 hesitate to get in touch with us.
               </p>
@@ -80,23 +80,23 @@ const ContactContainer = () => {
           </div>
         </div>
       </div>  
-      <div className="Main-body-contact">
+      <div className="h-fit Main-body-contact">
         <div className=" h-fit  py-4">
-          <div className="m-auto flex w-[1350px]">
-            <div className=" w-[50%] flex justify-center   flex-col ">
+          <div className="m-auto flex w-[1250px]">
+            <div className=" w-[50%] h-24 lg:h-fit flex justify-center   flex-col ">
               <div className="translate-y-12">
-                <h1 className="font-bold text-4xl">
+                <h1 className="font-bold text-2xl lg:text-4xl">
                   We Would Love To Hear From You
                 </h1>
-                <p className="text-xl py-1">Our mobile no : +9779806133772</p>
-                <p className="text-xl py-1">Our Telephn no: 01-521345</p>
-                <p className="text-xl py-1">Our Email : suscriber@gmail.com</p>
+                <p className="text-lg lg:text-xl py-1">Our mobile no : +9779806133772</p>
+                <p className="text-lg lg:text-xl py-1">Our Telephn no: 01-521345</p>
+                <p className="text-lg lg:text-xl py-1">Our Email : suscriber@gmail.com</p>
               </div>
             </div>
 
-            <div className=" flex justify-center w-[50%]">
+            <div className=" flex h-[500px]  justify-center w-[50%]">
               <img
-                className="translate-y-12"
+                className="translate-y-12 lg:static top-[690px] left-40 absolute "
                 src={ContactusImage}
                 alt=""
                 height={500}
@@ -105,15 +105,15 @@ const ContactContainer = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1350px] h-[610px] flex m-auto">
+        <div className="w-[1250px] h-fit lg:h-[610px] flex flex-col lg:flex-row   m-auto">
           <div className="location-map relative    w-[50%]">
-            <div className="absolute">
-              <h1 className=" text-3xl font-bold">Contact us</h1>
-              <p className="text-xl">
+            <div className="absolute  translate-y-[-5rem] lg:translate-y-0">
+              <h1 className=" text-xl lg:text-3xl font-bold">Contact us</h1>
+              <p className=" text-lg lg:text-xl">
                 Want to get in touch? We'd love to hear from you.
               </p>
             </div>
-            <div className="flex items-end h-[90%] ">
+            <div className="flex lg:w-full w-[97%] items-end h-[90%] ">
               <img
                 className=" h-[88%] border-[3px] rounded-lg border-red-400 w-full flex"
                 src={MapImage}
@@ -126,10 +126,11 @@ const ContactContainer = () => {
             <h1 className="m-4 translate-x-12 text-2xl font-bold">
               Message us
             </h1>
-            <div className="form-fillup w-full  m-4 grid grid-cols-2 gap-4">
+            <div className="form-fillup w-full lg:w-[600px]  m-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
               <div>
               
                 <input
+                 className = "w-[95%] lg:w-full"
                   type="text"
 
                   name="name"
@@ -143,6 +144,8 @@ const ContactContainer = () => {
               <div>
                 
                 <input
+                 className = "w-[95%] lg:w-full"
+
                   type="email"
                   placeholder="Email"
 
@@ -157,20 +160,27 @@ const ContactContainer = () => {
               <div>
 
                 {" "}
-                <input type="text" placeholder="Phone" name="phoneno" onChange={handleInputChange}/>
+                <input 
+                 className = "w-[95%] lg:w-full"
+
+                 type="text"
+                  placeholder="Phone" 
+                  name="phoneno"
+                   onChange={handleInputChange}/>
               </div>
               <div>
                 {" "}
-                <input type="text" placeholder="Subject" name="subject" onChange={handleInputChange} />
+                <input 
+                 className = "  w-[95%] lg:w-full"
+
+                type="text"
+                 placeholder="Subject" 
+                 name="subject"
+                  onChange={handleInputChange} />
 
              
-                <input type="text" placeholder="Phone" name = "phoneno"/>
               </div>
-              <div>
-            
-                <input type="text" placeholder="Subject" name="subject" />
-
-              </div>
+              
             </div>
             <div>
               <textarea 
@@ -190,8 +200,8 @@ const ContactContainer = () => {
             </form>
           </div>
         </div>
-        <div className=" translate-y-16 p-4 w-[1350px] m-auto">
-          <h1 className=" our-social-links text-4xl">Our Social Links</h1>
+        <div className=" translate-y-16 h-60 p-4 w-[1150px] m-auto">
+          <h1 className=" our-social-links text-xl  lg:text-4xl">Our Social Links</h1>
           <br />
           <div className="flex gap-8">
             <div>

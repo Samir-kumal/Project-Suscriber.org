@@ -112,14 +112,14 @@ const Header = () => {
           : "Navbar fixed text-white top-0 z-10 h-20 w-full lg:flex items-center justify-between"
       }
     >
-      <div className="logo translate-x-28">
+      <div className="logo translate-y-4 lg:translate-y-0 lg:translate-x-28">
         <img src={Image} alt="" height="90px" width="90px" />
       </div>
       {Menu && (
         <div className="lg:flex lg:w-[80%]   Navmenu  transition duration-200 ">
           <div className="menu flex   items-center   ">
-            <ul className="menu-items lg:items-center  lg:flex  xl:gap-[1rem]">
-              <li className="menu-home menu-item  main-home text-xl px-4">
+            <ul className="menu-items lg:items-center  lg:flex  xl:gap-[4px] lg:gap-0">
+              <li className="menu-home menu-item  main-home text-xl px-2">
                 <NavLink to="/">Home</NavLink>
               </li>
               <li
