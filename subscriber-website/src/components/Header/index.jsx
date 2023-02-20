@@ -113,10 +113,10 @@ const Header = () => {
       }
     >
       <div className="logo translate-y-4 lg:translate-y-0 lg:translate-x-28">
-        <img src={Image} alt="" height="90px" width="90px" />
+      <NavLink to={"/"} ><img src={Image} alt="" height="90px" width="90px" /></NavLink>  
       </div>
       {Menu && (
-        <div className="lg:flex lg:w-[80%]   Navmenu  transition duration-200 ">
+        <div className="lg:flex lg:w-[80%] w-screen  Navmenu  transition duration-200 ">
           <div className="menu flex   items-center   ">
             <ul className="menu-items lg:items-center  lg:flex  xl:gap-[4px] lg:gap-0">
               <li className="menu-home menu-item  main-home text-xl px-2">

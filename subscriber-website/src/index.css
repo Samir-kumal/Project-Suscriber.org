@@ -78,6 +78,9 @@ body {
   border-radius: 10px;
   border: 0;
 }
+.card_Recent_projects{
+  height: 400px;
+}
 
 .testimonials .card_testimonials{
   height: 300px;
@@ -154,12 +157,19 @@ body {
 /* Recent Project section */
 
 .card_Recent_projects{
-  height: 500px;
+  height: 700px;
 }
 .card_Recent_projects .recent_project_cards{
   background: #000;
   width: 550px;
   height: 500px;
+}
+@media screen and (max-width:1024px) {
+  .card_Recent_projects .recent_project_cards{
+    background: #000;
+    width: 100%;
+    height: 300px;
+  }
 }
 
 /* About us section */
@@ -167,6 +177,7 @@ body {
   background-image: url(./Images/Moreparticles.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background: #e9e9e9;
   
 }
 

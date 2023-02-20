@@ -15,7 +15,7 @@ const Section_2 = () => {
   }, []);
   return (
     <div>
-      <section className="Section-2-main h-fit ">
+      <section className="Section-2-main mb-16 h-fit ">
         <div className="cards-section w-[80%] m-auto h-fit">
           <div className="desc h-32 flex justify-center items-center">
             <h1 className="text-3xl font-serif font-bold">
@@ -27,8 +27,8 @@ const Section_2 = () => {
             
             <div className="cards grid lg:grid-cols-3 md:grid-cols-2 sm-grid-cols-1  gap-12 justify-center">
              <div data-aos = "fade-up" data-aos-duration="4000">
-             <div className="flex justify-center transition duration-200 hover:scale-80">
-                <div className="flex flex-col items-center p-6 rounded-lg shadow-lg transition duration-200 hover:scale-105 bg-white max-w-sm">
+             <div className="flex  justify-center transition duration-200 hover:scale-80">
+                <div className="flex w-[300px] h-[320px] flex-col items-center p-6 rounded-lg shadow-lg transition duration-200 hover:scale-105 bg-white max-w-sm">
                   <h5 className="text-gray-900 text-xl leading-tight font-bold mb-2">
                     Logo Designing
                   </h5>
@@ -52,7 +52,7 @@ const Section_2 = () => {
              </div>
               <div data-aos = "fade-up" data-aos-duration="5000">
               <div className="flex justify-center transition duration-200 hover:scale-105">
-                <div className="flex flex-col items-center p-6 rounded-lg shadow-lg transition duration-200  bg-white max-w-sm">
+                <div className="flex w-[300px] h-[320px] flex-col items-center p-6 rounded-lg shadow-lg transition duration-200  bg-white max-w-sm">
                   <h5 className="text-gray-900 text-xl leading-tight font-bold mb-2">
                     Digital Marketing
                   </h5>
@@ -76,7 +76,7 @@ const Section_2 = () => {
               </div>
               <div data-aos = "fade-up" data-aos-duration="6000">
               <div className="flex justify-center transition duration-200 hover:scale-105">
-                <div className="flex flex-col items-center p-6 rounded-lg shadow-lg bg-white max-w-sm">
+                <div className="flex w-[300px] h-[320px] flex-col items-center p-6 rounded-lg shadow-lg bg-white max-w-sm">
                   <h5 className="text-gray-900 text-xl leading-tight font-bold mb-2">
                     Branding
                   </h5>
@@ -101,7 +101,7 @@ const Section_2 = () => {
               </div>
                 <div data-aos = "fade-up" data-aos-duration="7000">
                 <div className="flex justify-center transition duration-200 hover:scale-105">
-                <div className=" flex flex-col items-center p-6 rounded-lg shadow-lg bg-white max-w-sm ">
+                <div className=" flex w-[300px] h-[320px] flex-col items-center p-6 rounded-lg shadow-lg bg-white max-w-sm ">
                   <h5 className="text-gray-900 px-4  text-xl leading-tight  font-bold mb-2">
                     Web Designing
                   </h5>
@@ -126,7 +126,7 @@ const Section_2 = () => {
                 </div>
               <div data-aos = "fade-up" data-aos-duration="8000">
               <div className="flex justify-center transition duration-200 hover:scale-105">
-                <div className="flex flex-col items-center p-6 rounded-lg shadow-lg bg-white max-w-sm">
+                <div className="flex w-[300px] h-[320px] flex-col items-center p-6 rounded-lg shadow-lg bg-white max-w-sm">
                   <h5 className="text-gray-900 text-xl leading-tight font-bold mb-2">
                     Online Reception Services
                   </h5>
@@ -150,7 +150,7 @@ const Section_2 = () => {
               </div>
               <div data-aos = "fade-up" data-aos-duration="9000">
               <div className="flex justify-center transition duration-200 hover:scale-105">
-                <div className="flex flex-col items-center p-6 rounded-lg shadow-lg bg-white max-w-sm">
+                <div className="flex w-[300px] h-[320px] flex-col items-center p-6 rounded-lg shadow-lg bg-white max-w-sm">
                   <h5 className="text-gray-900 text-xl leading-tight font-bold mb-2">
                     UI/UX
                   </h5>

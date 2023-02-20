@@ -24,22 +24,23 @@ const Section_1 = () => {
     <div>
       <section className="relative h-fit bg-black ">
         <div className="main-landing flex relative w-full h-[750px] bg-white">
-          <div className="absolute right-10 bottom-0">
+          <div className="absolute lg:w-[700px] right-10 bottom-0">
             <lottie-player
               src="https://assets6.lottiefiles.com/packages/lf20_k0sUtnckyH.json"
               background="transparent"
               speed="0.5"
-              style={{ width: "700px", height: "700px" }}
               loop
               autoplay
             ></lottie-player>
           </div>
         </div>
-        <div className="page-main-content absolute top-[35%] left-8 text-white">
-          <h1 className="text-6xl font-semibold text-white">Create your Brand <br /> with Us!</h1>
-          <h1 className="Main-heading lg:text-6xl font-semibold text-white text-5xl">
-           We Proivde you<br />
-            <Typewriter
+        <div className="page-main-content absolute top-[25%] lg:top-[35%] left-8 text-white">
+          <h1 className="text-4xl  text-white pt-2">Create Your Brand  With Us!</h1>
+          <h1 className="Main-heading lg:text-4xl  text-white text-4xl">
+           We Provide you
+          </h1>
+          <h1 className="lg:text-6xl text-4xl font-bold pt-1">
+          <Typewriter
               options={{
                 autoStart: true,
                 loop: true,
@@ -63,10 +64,12 @@ const Section_1 = () => {
           <br />
           <br />
           <button
-            id="button"
-            className="GetStarted-btn absolute top-[90%] left-[0%]  rounded-3xl  px-12 py-4 text-black font-semibold bg-slate-100 transition duration-200  border-2 hover:bg-red-500 hover:text-white"
+            className="GetStarted-btn w-[200px] h-14 absolute -bottom-[17rem]
+             lg:top-[90%] lg:left-[0%]  rounded-3xl  px-12 py-4
+            text-black font-semibold bg-slate-100 transition
+              duration-200  border-2 hover:bg-red-500 hover:text-white"
           >
-            <a href="google.com">Get Started</a>
+            <a href="/contact">Get Started</a>
           </button>
         </div>
       </section>

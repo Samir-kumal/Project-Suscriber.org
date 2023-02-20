@@ -5,7 +5,7 @@ import Slider from "react-slick";
 
 const Language_slider = () => {
   const sliderRef = useRef(null);
-  //   const [slideToShow, setSlideToShow] = useState(1);
+    const [slideToShow, setSlideToShow] = useState(6);
 
   useEffect(() => {
     let currentSlide = 0;
@@ -18,13 +18,31 @@ const Language_slider = () => {
     }, 5000);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1000 && window.innerWidth >= 500) {
+        setSlideToShow(2);
+      } else if (window.innerWidth < 500) {
+        setSlideToShow(1);
+      } else {
+        setSlideToShow(6);
+      }
+    };
+  
+    window.addEventListener("resize", handleResize);
+  
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
  
 
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
+    slidesToShow: slideToShow,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -37,7 +55,7 @@ const Language_slider = () => {
 
       <Slider ref={sliderRef} {...settings}>
         <div className="mt-16" style={{ display: "flex", gap: "5rem" }}>
-          <div className="card  h-[90px] w-[100px] ">
+          <div className="card  h-[90px] w-[175px] bg-black ">
             <svg
               width="52"
               height="54"

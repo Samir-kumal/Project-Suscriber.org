@@ -11,9 +11,9 @@ const TeamContainer = () => {
   return (
     <div className="main_team">
       <Header />
-      <div className="Team_section w-full h-[600px] flex flex-col-reverse">
+      <div className="Team_section w-full h-[600px] flex lg:flex-row flex-col-reverse">
       <div className="flex flex-col relative  w-[50%]">
-            <div className=" absolute bottom-0 translate-y-[8rem]
+            <div className=" absolute lg:static bottom-0 translate-y-[8rem]
              w-[600px]">
               <lottie-player 
                 src="https://assets7.lottiefiles.com/packages/lf20_xt3zjwah.json"
@@ -25,15 +25,12 @@ const TeamContainer = () => {
             </div>
           </div>
           <div className=" w-[50%]  flex items-end justify-center  ">
-            <div className="h-[200px] absolute top-60 left-0 flex items-center translate-y-[-6rem] flex-col ">
-              <h2 className="contact-us-Title text-4xl lg:text-6xl font-serif font-bold text-center">
-                About Us
+            <div className="h-[200px] absolute top-60 lg:static  lg:translate-x-18 lg:translate-y-4 left-0 flex items-center translate-y-[-6rem] flex-col ">
+              <h2 className="contact-us-Title text-4xl lg:text-[3rem]  font-bold text-center">
+                Your Idea, Our Work
               </h2>
               <br />
-              <p className="font-semibold text-lg lg:w-[] w-[80%] lg:text-xl text-center">
-              Suscriber.org is a revenue-based project company specializing in the IT sector. We are especially working in the field of website design and software development in Nepal. 
-
-              </p>
+             
             </div>
           </div>
       </div>

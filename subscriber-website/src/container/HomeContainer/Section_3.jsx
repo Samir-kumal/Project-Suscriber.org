@@ -4,10 +4,8 @@ import LottiePlayer from "./LottiePlayer";
 const Section_3 = () => {
   return (
     <div data-aos = "fade-up" data-aos-duration="1000">
-      <section className="aboutus_section   pt-20 pb-12 lg:h-[900px] h-fit bg-[#F1F2F3] ">
-        <div className="third-section w-full flex justify-center ">
-          <h1 className="font-serif sm:text-center font-bold text-4xl">About Us</h1>
-        </div>
+      <section className="aboutus_section   pt-20 pb-12 lg:h-[900px] h-fit bg-white ">
+        
         <div className="About-us lg:flex  lg:items-center w-[80%] m-auto mt-8 lg:px-10  gap-24 shadow-2xl p-4 lg:h-[700px] h-fit">
           <div className="m-auto  flex justify-center" style={{ maxWidth: "600px", width: "100%" }}>
             <LottiePlayer/>

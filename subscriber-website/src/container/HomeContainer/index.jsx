@@ -14,7 +14,7 @@ const HomeContainer = ( ) => {
             <main>
                     <Section1/>
                     <Section2/>
-                    <Section_3/>
+                    {/* <Section_3/> */}
                     <Recent_projects/>
                     <Language_slider/>
                     <Section_4/>
