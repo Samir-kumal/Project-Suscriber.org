@@ -385,9 +385,10 @@ const Header = () => {
 
                         <div className="info">
                           <h1>Our Phone Number</h1>
-                          <p>+977 980000xxxx</p>
-                          <p>+075 98xxxx</p>
-                          <p>+977 98665555xx</p>
+                          <p>+977 <a href='tel:9815904119'>9815904119</a></p>
+                          <p>+977 <a href='tel:9866615358'>9866615358</a></p>
+                          <p>+977 <a href='tel:9806133772'>9806133772</a></p>
+                          
                         </div>
                       </div>
                     </div>

@@ -115,16 +115,16 @@ const ContactContainer = () => {
           <div className="m-auto flex w-[1250px]">
             <div className=" w-[50%] h-24 lg:h-[400px] flex justify-center   flex-col ">
               <div className="translate-y-12 lg:-translate-y-20 lg:translate-x-10">
-                <h1 className="font-bold text-2xl w-screen lg:text-3xl mb-5">
+                <h1 className="font-bold text-2xl w-screen lg:text-3xl mt-5">
                   We Would Love To Hear From You
                 </h1>
                 <p className="w-screen text-lg lg:text-lg py-1">
                   {" "}
-                  Phone no : +9779806133772
+                  Phone no : +977 <a href='tel:9815904119'>9815904119</a>
                 </p>
                 <p className="w-screen text-lg lg:text-lg py-1">
                   {" "}
-                  Telephone no: 01-521345
+                  Telephone no: <a href='tel:01-521345'>01-521345</a>
                 </p>
                 <p className="w-screen text-lg lg:text-lg py-1">
                   {" "}

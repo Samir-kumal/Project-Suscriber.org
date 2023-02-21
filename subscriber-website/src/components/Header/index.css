@@ -136,6 +136,9 @@
 .left-icon{
     font-size: 1.7rem;
 }
+.left-icon .fa-solid{
+    color: black;
+}
 .Body-right .right-r-1{
     width: 30vw;
     height: fit-content;
