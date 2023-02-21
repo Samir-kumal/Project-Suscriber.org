@@ -134,7 +134,7 @@ const Header = () => {
       {Menu && (
         <div className="lg:flex lg:w-[80%] w-screen  Navmenu  transition duration-200 ">
           <div className="menu flex   items-center   ">
-            <ul className="menu-items lg:items-center  lg:flex  xl:gap-[4px] lg:gap-0">
+            <ul className="menu-items lg:items-center  lg:flex  xl:gap-[5px] lg:gap-0">
               <li className="menu-home menu-item  main-home text-xl px-2">
                 <NavLink to="/">Home</NavLink>
               </li>
@@ -292,7 +292,7 @@ const Header = () => {
                 onMouseLeave={() =>
                   window.innerWidth > 1024 && setSubMenu3(false)
                 }
-                className="menu-portfolio menu-about text-xl px-4"
+                className=" menu-about text-xl px-4"
               >
                 <NavLink to="/about">About us</NavLink>
                 {subMenu3 && (
@@ -468,7 +468,7 @@ const Header = () => {
           </div>
         </div>
       )}
-      <div onClick={Toggle} className="lg:hidden absolute top-8 right-6   ">
+      <div onClick={Toggle} className="lg:hidden absolute top-8 right-12   ">
         <svg
           width="40"
           height="30"

@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family:sans-serif; */
+  /* overflow-x: hidden; */
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -623,8 +624,7 @@ body {
   }
   .menu-services:hover:after{
     width: 75px;
-  }
-  .menu-pricing{
+  } .menu-pricing{
     position: relative;
   }
   .menu-pricing::after{
@@ -638,9 +638,26 @@ body {
     transition: 0.3s linear;
     
   }
-  .menu-pricing:hover:after{
+  /* .menu-pricing:hover:after{
     width: 70px;
+  } */
+  .menu-pricing:hover:before{
+    display: block;
   }
+  .menu-pricing::before{
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    transform: rotate(45deg);
+    top: 80px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    /* opacity: 0; */
+    /* z-index: -1; */
+  }
+  
+ 
   
   .menu-portfolio{
     position: relative;
@@ -668,18 +685,21 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  .menu-about:after{
-    position: absolute;
+ 
+  .menu-about:before{
     content: "";
-    width: 0px;
-    height: 3px;
-    background: #fff;
-    bottom: 6px;
-    transition: 0.3s linear;
+    position: absolute;
+    background: #ffffff;
+    transform: rotate(45deg);
+    top: 80px;
+    width: 50px;
+    height: 50px;
+    display: none;
 
   }
-  .menu-about:hover:after{
-    width: 75px;
+ 
+  .menu-about:hover:before{
+    display: block;
   }
   .menu-careers{
     position: relative;
@@ -733,9 +753,7 @@ body {
 
 /* Portfolio section page */
 
-.Recent{
-  
-}
+
 .Recent::after,
 .Recent::before {
   content: "";
@@ -749,7 +767,6 @@ body {
   position: absolute;
   background: rgb(255, 255, 255);
   height: 5px;
-  width: 90px;
   top: 15px;
   left: -7rem;
 }
@@ -758,9 +775,28 @@ body {
   position: absolute;
   background: rgb(253, 253, 253);
   height: 5px;
-  width: 90px;
   top: 15px;
   right: -7rem;
+}
+@media screen and (min-width:1024px) {
+  .Recent::before {
+    content: "";
+    position: absolute;
+    background: rgb(255, 255, 255);
+    height: 5px;
+    width: 0px;
+    top: 15px;
+    left: -7rem;
+  }
+  .Recent::after {
+    content: "";
+    position: absolute;
+    background: rgb(253, 253, 253);
+    height: 5px;
+    width: 0px;
+    top: 15px;
+    right: -7rem;
+  }
 }
 .project-card {
   transition: 0.4s ease-in-out;

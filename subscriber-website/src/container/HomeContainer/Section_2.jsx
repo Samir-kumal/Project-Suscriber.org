@@ -15,7 +15,7 @@ const Section_2 = () => {
   }, []);
   return (
     <div>
-      <section className="Section-2-main mb-16 h-fit ">
+      <section className="Section-2-main mb-16 h-fit  ">
         <div className="cards-section w-[80%] m-auto h-fit">
           <div className="desc h-32 flex justify-center items-center">
             <h1 className="text-3xl font-serif font-bold">

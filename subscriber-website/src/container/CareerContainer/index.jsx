@@ -18,7 +18,7 @@ const CareerContainer = () => {
       <div>
         <div className="ContactUs_section w-full h-[600px] flex flex-col-reverse lg:flex-row ">
           <div className="flex flex-col  w-full lg:w-[50%]">
-            <div className=" w-full  lg:translate-y-16">
+            <div className=" w-full   lg:translate-y-16">
               <lottie-player
                 src="https://assets7.lottiefiles.com/packages/lf20_xt3zjwah.json"
                 background="transparent"
@@ -28,8 +28,9 @@ const CareerContainer = () => {
               />
             </div>
           </div>
-          <div className=" w-full lg:w-[50%] lg:translate-y-0  lg:translate-x-2 translate-y-[730px] lg:flex items-end justify-center  ">
-            <div className="h-[120px] lg:static  left-0  translate-y-[-26rem] flex items-center lg:translate-x-6 lg:translate-y-[-4rem] flex-col ">
+          <div className=" w-full lg:w-[50%] lg:translate-y-0  lg:translate-x-2  lg:flex items-end justify-center  ">
+            <div className="h-[120px] lg:static   
+             flex items-center lg:translate-x-6 lg:translate-y-[-4rem] flex-col ">
               <h2 className="text-white  text-4xl lg:text-[2.3rem]  text-center">
                 We Are Looking For A Self-Motivated <br /> And Unique
                 Personality
@@ -38,12 +39,12 @@ const CareerContainer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full  h-fit">
+      <div className="w-full   h-fit">
         <div className="h-20 flex justify-center items-center w-full lg:w-[92%] m-auto ">
           <h1 className="text-4xl font-bold">Our Job Vacancy</h1>
         </div>
         <div className=" w-fit h-fit grid items-end m-auto  ">
-          <div className="grid px-28 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-[4rem] ">
+          <div className="grid lg:px-28 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-[4rem] ">
             <div className="h-[500px] w-[300px] rounded-xl grid bg-slate-400  items-end">
                 <div className="flex justify-center items-center">
                     <img src={ContentWriter} className ="Career-images" alt="" />

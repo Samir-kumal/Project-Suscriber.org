@@ -54,10 +54,10 @@ const ContactContainer = () => {
   return (
     <>
       <Header />
-      <div>
+      <div className="w-screen bg-black">
         <div className="ContactUs_section w-full lg:h-[600px] h-[600px] flex flex-col-reverse lg:flex-row ">
           <div className="flex flex-col  w-full lg:w-[50%]">
-            <div className=" w-full -translate-y-12 lg:translate-y-16">
+            <div className=" w-full  h-[300px] lg:h-fit  lg:translate-y-16">
               <lottie-player
                 src="https://assets7.lottiefiles.com/packages/lf20_xt3zjwah.json"
                 background="transparent"
@@ -68,7 +68,7 @@ const ContactContainer = () => {
             </div>
           </div>
           <div className=" w-full  lg:w-[50%] lg:translate-y-0  lg:translate-x-2  lg:flex items-end justify-center  ">
-            <div className="h-[120px] lg:static absolute left-[15%] right-[15%]  -bottom-10  -translate-y-[3rem] flex items-center lg:translate-x-6 lg:translate-y-[-4rem] flex-col ">
+            <div className="h-[120px]  lg:static  left-[15%] right-[15%]  -bottom-10  -translate-y-[3rem] flex items-center lg:translate-x-6 lg:translate-y-[-4rem] flex-col ">
               <h2 className="text-white  text-4xl lg:text-6xl  font-bold text-center">
                 Let's Connect
               </h2>
@@ -112,13 +112,13 @@ const ContactContainer = () => {
       </div>
       <div className="h-fit Main-body-contact">
         <div className=" h-fit  py-4">
-          <div className="m-auto flex w-[1250px]">
+          <div className="m-auto flex   lg:w-[1250px]">
             <div className=" w-[50%] h-24 lg:h-[400px] flex justify-center   flex-col ">
               <div className="translate-y-12 lg:-translate-y-20 lg:translate-x-10">
                 <h1 className="font-bold text-2xl w-screen lg:text-3xl mb-5">
                   We Would Love To Hear From You
                 </h1>
-                <p className="w-screen text-lg lg:text-lg py-1">
+                <p className="w-screen  text-lg lg:text-lg py-1">
                   {" "}
                   Phone no : +9779806133772
                 </p>
@@ -142,9 +142,9 @@ const ContactContainer = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1250px] h-fit lg:h-[550px] flex flex-col lg:flex-row   m-auto">
-          <div className="location-map relative    w-[50%]">
-            <div className="absolute  translate-y-[-5rem] lg:translate-x-2   lg:-translate-y-4">
+        <div className="lg:w-[1250px] h-fit lg:h-[550px] flex flex-col lg:flex-row   m-auto">
+          <div className="location-map relative lg:-translate-y-24   lg:w-[50%]">
+            <div className=" w-full  lg:translate-x-2   lg:translate-y-8">
               <h1 className=" text-xl lg:text-3xl font-bold">Contact us</h1>
               <p className=" text-lg lg:text-xl">
                 Want to get in touch? We'd love to hear from you.
@@ -212,7 +212,10 @@ const ContactContainer = () => {
                 />
                 {isSending}
                 <input
-                  className="inputField mx-4 my-6 text-xl font-bold hover:bg-red-600 transition duration-200  bg-red-400 py-4 px-10 text-white rounded-xl w-[95%]"
+                  className="inputField mx-4
+                   my-6 text-xl font-bold hover:bg-red-600
+                    transition duration-200  bg-red-400 py-4
+                     px-10 text-white rounded-xl w-[95%]"
                   type="submit"
                   value="Submit"
                 />
@@ -220,7 +223,7 @@ const ContactContainer = () => {
             </form>
           </div>
         </div>
-        <div className=" translate-y-16 h-20 p-4 w-[1150px] m-auto"></div>
+        {/* <div className=" translate-y-16 bg-black h-20 p-4 w-10 m-auto"></div> */}
       </div>
       <Footer />
     </>
