@@ -104,7 +104,7 @@ const Header = () => {
   } else if (location.pathname === "/") {
     navbarStyle = { backgroundColor: "transparent" };
   } else {
-    navbarStyle = { backgroundColor: "red" };
+    navbarStyle = { backgroundColor: "#fff" };
   }
 
   const subMenu_mobile = () => {
