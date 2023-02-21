@@ -3,6 +3,10 @@ import { NavLink, useLocation } from "react-router-dom";
 import Image from "../../assets/site-logo.png";
 import { useRef } from "react";
 import { useState } from "react";
+// import 'font-awesome/css/font-awesome.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import './index.css'
 const Header = () => {
   const [Menu, setMenu] = useState(true);
   const [subMenu1, setSubMenu1] = useState(false);
@@ -20,6 +24,17 @@ const Header = () => {
       setMenu(true);
     }
   };
+
+  const [isClicked, setClicked] = useState("none");
+    const setInquiryContainer = () => {
+      
+      if(isClicked === 'none'){
+        return setClicked("block");
+      }
+      else{
+        return setClicked("none");
+      }
+    }
 
   //   function handleHeaderColor() {
   //     if (menu) {
@@ -82,6 +97,7 @@ const Header = () => {
 
   if (
     location.pathname === "/about" ||
+    location.pathname === "/career" ||
     location.pathname === "/portfolio" ||
     location.pathname === "/contact" ||
     location.pathname === "/team"
@@ -327,17 +343,99 @@ const Header = () => {
                 )}
               </li>
               <li className="menu-careers menu-item  text-xl px-4">
-                <NavLink to="/careers">Careers</NavLink>
+                <NavLink to="/career">Careers</NavLink>
               </li>
               <li className="menu-contact menu-item  text-xl px-4">
                 <NavLink to="/contact">Contact us</NavLink>
               </li>
             </ul>
+            
           </div>
+          <div className='wrapper'style={{display: `${isClicked}`}} >
+      {/* `${isClicked}` */}
+       <div className="InquiryContainer" >
+                    <div className="InquiryContainer-Header">
+                      <button className="CloseForm" onClick={setInquiryContainer}><i className="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div className="InquiryContainer-Body">
+                      <div className="Body-left">
+                            <div className="left-r-1">
+                              <p className="p-1">We would love to hear from you</p>
+                              <p className="p-2">Get in touch</p>
+                            </div>
+                            <div className="left-r-2">
+                            
+                              <div className="left-col">
+                              <div className="left-col-wrapper">
+                              <div className="left-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div className="info">
+                                <h1>Office Address</h1>
+                                <p>Butwal-4, Anything you like</p>
+                                </div>
+                              </div>
+                              </div>
+                              <div className="left-col">
+                              <div className="left-col-wrapper">
+                              <div className="left-icon"><i class="fa-solid fa-phone"></i></div>
+                                
+                                <div className="info">
+                                <h1>Our Phone Number</h1>
+                                <p>+977 980000xxxx</p>
+                                <p>+075 98xxxx</p>
+                                <p>+977 98665555xx</p>
+                                </div>
+                              </div>
+                              </div>
+                              <div className="left-col">
+                              <div className="left-col-wrapper">
+                              <div className="left-icon"><i class="fa-solid fa-envelope"></i></div>
+                              <div className="info">
+                                <h1>Our Email</h1>
+                                <p>info@subscriber.com</p>
+                                <p>support@subscriber.com</p>
+                                <p>contact@subscriber.com</p>
+                                </div>
+                              </div>
+                              </div>
+                            </div>
+                      </div>
+                      <div className="Body-right">
+                      <div className="right-r-1">
+                              <p className="p-1">Have a project in mind?</p>
+                              <p className="p-2">Tell us a bit more</p>
+                            </div>
+                            <div className="right-r-2">
+                              <form className="form-list">
+                                <div className="form-r-1">
+                                  <input type='text' placeholder="Fullname *" name='name' required={true}/>
+                                  <input type='email' placeholder="Email *" name='email' required={true} />
+                                </div>
+                                <div className="form-r-2">
+                                <input type='text' placeholder="Phone no *" name='phone' required={true}/>
+                                  <input type='email' placeholder="Subject *" name='subject' required={true} />
+                                </div>
+                                <div className="form-r-3">
+                                  <textarea placeholder="Message *" rows="30"/>
+                                </div>
+                                <div className="form-r-4">
+                                  <input type='submit' value='Submit'/>
+
+                                </div>
+                            
+                              </form>
+                      </div>
+                      </div>
+                      
+                    </div>
+                    <div className="InquiryContainer-Footer"></div>
+       </div>
+               
+        </div>
           <div className="lg:translate-x-[-9rem]  lg:absolute lg:right-0 lg:top-2  translate-x-0 p-3">
-            <button className="header-Btn lg:text-black border-2 border-red-500 font-semibold text-white lg:bg-white lg:hover:bg-red-500 lg:hover:text-white transition duration-200 bg-red-600 px-4 py-3 rounded-3xl">
+            <button onClick={setInquiryContainer} className="header-Btn lg:text-black border-2 border-red-500 font-semibold text-white lg:bg-white lg:hover:bg-red-500 lg:hover:text-white transition duration-200 bg-red-600 px-4 py-3 rounded-3xl">
               Join with us
             </button>
+            
           </div>
         </div>
       )}
@@ -354,8 +452,12 @@ const Header = () => {
             fill="white"
           />
         </svg>
+        
       </div>
+      
+      
     </header>
+    
   );
 };
 

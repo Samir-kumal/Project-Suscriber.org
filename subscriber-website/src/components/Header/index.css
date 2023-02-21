@@ -1,0 +1,240 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    /* background-color: green; */
+    /* -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px); */
+    
+    z-index: 9999;
+    position: absolute;
+    top: 0.5rem;
+    left: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
+    
+}
+.InquiryContainer{
+    width: 95vw;
+    height: inherit;
+    background-color: rgb(246, 246, 246);
+    overflow-y: auto;
+}
+.InquiryContainer-Header{
+        width: 100%;
+        height: 7vh;
+        /* background-color: gray; */
+       
+}
+.InquiryContainer-Body{
+    width: 100%;
+        height: 93vh;
+        background-color: green;
+        display: flex;
+}
+.InquiryContainer-Body .Body-left{
+    
+        width: 45%;
+        height: inherit;
+        background-color: yellowgreen;
+        /* border: 1px solid black; */
+
+}
+.InquiryContainer-Body .Body-right{
+        width: 55%;
+        height: inherit;
+        background-color: yellowgreen;
+        /* border: 1px solid black; */
+}
+
+.CloseForm{
+    width: 5rem;
+    height: inherit;
+    background-color: rgba(243, 25, 25, 0.896);
+    border-radius: 0.5rem 0rem 0rem 4rem;
+    float: right;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.CloseForm:hover{
+    border: 1px solid black;
+}
+.CloseForm .fa-solid{
+    font-size: 2rem;
+    color: white;
+}
+.Body-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 1rem;
+}
+.Body-left .left-r-1{
+    width: 25vw;
+    height: fit-content;
+    /* background-color: red; */
+    margin-top: 2rem;
+}
+.Body-left .left-r-1 .p-1{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+.Body-left .left-r-1 .p-2{
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+.Body-left .left-r-2{
+    width: 25vw;
+    height: fit-content;
+    /* background-color: white; */
+    margin-top: 2rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.Body-left .left-r-2 .left-col{
+    width: inherit;
+    height: fit-content;
+    
+    
+}
+.left-col .left-col-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: aqua; */
+}
+.left-col-wrapper .info h1{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.info p{
+   
+    padding: 0.2rem;
+}
+.left-col .left-icon{
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-icon{
+    font-size: 1.7rem;
+}
+.Body-right .right-r-1{
+    width: 30vw;
+    height: fit-content;
+    /* background-color: red; */
+    margin-top: 2rem;
+}
+.Body-right .right-r-1 .p-1{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 1rem;
+}
+.Body-right .right-r-1 .p-2{
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+.Body-right .right-r-2{
+    width: 50vw;
+    background-color: rgba(255, 255, 255, 0.205);
+    height: fit-content;
+    
+}
+.form-list{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    overflow-y: auto;
+}
+.right-r-2 .form-r-1{
+    width: 45vw;
+    height: 7vh;
+    /* background-color: wheat; */
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+.form-r-2
+{
+    display: flex;
+    gap: 1rem;
+}
+.form-r-1 input,
+.form-r-2 input{
+    width: 22vw;
+    height: inherit;
+    padding-left: 1.2rem;
+    border: none;
+    outline: none;
+    
+    
+}
+.form-r-1 input:focus{
+    border: 2px solid green;
+}
+.form-r-2 input:focus{
+    border: 2px solid green;
+}
+.form-r-3 textarea:focus{
+    border: 2px solid green;
+}
+.form-r-2{
+    width: 45vw;
+    height: 7vh;
+    /* background-color: salmon; */
+}
+.form-r-3{
+    width: 45vw;
+    height: 30vh;
+    background-color: green;
+}
+.form-r-3 textarea{
+    width: inherit;
+    height: 30vh;
+    outline: none;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+}
+.form-r-4{
+    width: 45vw;
+    height: 7vh;
+    /* background-color: aliceblue; */
+    margin-bottom: 1rem;
+}
+.form-r-4 input{
+    width: 10vw;
+    height: inherit;
+    background-color: rgb(243, 242, 242);
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease-in;
+}
+.form-r-4 input:hover{
+    
+    background-color: rgb(244, 29, 29);
+    color: black;
+}
+

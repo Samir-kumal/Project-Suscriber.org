@@ -9,6 +9,7 @@ import './container/AboutUsContainer/index.css'
 import Portfolio_section from './pages/Portfolio_section'; 
 import AboutUsPage from './pages/AboutUsPage';
 import TeamPage from "./pages/TeamPage"
+import CareerPage from './pages/CareerPage';
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<TeamPage />} />
+          <Route path="/career" element={<CareerPage />} />
 
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/portfolio" element={<Portfolio_section />} />
