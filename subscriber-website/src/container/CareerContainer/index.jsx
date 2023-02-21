@@ -70,7 +70,7 @@ const CareerContainer = () => {
                   <p>Corporate Title: Marketing</p>
                   <p>Member No. of Vacancies: 1</p>
                   <p>Posted date : Feb 07, 2023</p>
-                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=" https://wa.me/9815904119"><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ const CareerContainer = () => {
                   <p>Corporate Title: Marketing</p>
                   <p>Member No. of Vacancies: 1</p>
                   <p>Posted date : Feb 07, 2023</p>
-                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href="https://wa.me/9815904119"><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
@@ -100,7 +100,7 @@ const CareerContainer = () => {
                   <p>Corporate Title: Marketing</p>
                   <p>Member No. of Vacancies: 1</p>
                   <p>Posted date : Feb 07, 2023</p>
-                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href="https://wa.me/9815904119"><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
@@ -115,7 +115,7 @@ const CareerContainer = () => {
                   <p>Corporate Title: Marketing</p>
                   <p>Member No. of Vacancies: 1</p>
                   <p>Posted date : Feb 07, 2023</p>
-                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href="https://wa.me/9815904119"><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
@@ -130,7 +130,7 @@ const CareerContainer = () => {
                   <p>Corporate Title: Marketing</p>
                   <p>Member No. of Vacancies: 1</p>
                   <p>Posted date : Feb 07, 2023</p>
-                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href="https://wa.me/9815904119"><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
