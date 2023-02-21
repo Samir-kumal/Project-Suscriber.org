@@ -7,7 +7,18 @@ import img3 from "../../assets/team/03.png";
 import img4 from "../../assets/team/04.png";
 import img5 from "../../assets/team/05.png";
 import "./index.css";
+import Facebook from "../../assets/elements/Facebook";
+import Instagram from "../../assets/elements/Instagram";
+import LinkedIn from "../../assets/elements/LinkedIn";
+import Youtube from "../../assets/elements/Youtube";
+
 const TeamContainer = () => {
+
+  let FacebookLink = "https://www.facebook.com/suscribernepal";
+  let TwitterLink = "https://twitter.com/";
+  let InstagramLink = "https://www.instagram.com/samer_kumal/";
+  let LinkedInLink = "https://www.linkedin.com/";
+  let YoutubeLink = "https://www.youtube.com/";
   return (
     <div className="main_team">
       <Header />
@@ -26,7 +37,7 @@ const TeamContainer = () => {
           </div>
           <div className=" w-[50%]  flex items-end justify-center  ">
             <div className="h-[200px] absolute top-60 lg:static  lg:translate-x-18 lg:translate-y-4 left-0 flex items-center translate-y-[-6rem] flex-col ">
-              <h2 className="contact-us-Title text-4xl lg:text-[3rem]  font-bold text-center">
+              <h2 className="contact-us-Title text-4xl lg:text-[3rem] text-white  font-bold text-center">
                 Your Idea, Our Work
               </h2>
               <br />
@@ -46,8 +57,8 @@ const TeamContainer = () => {
           </div>
           <div className="line"></div>
           <div className="right">
-            <div className="r1-desc">
-              <p>
+            <div className="r1-desc  ">
+              <p className="Paragraph-justification">
                 In publishing and graphic design, Lorem ipsum is a placeholder
                 text commonly used to demonstrate the visual form of a document
                 or a typeface without relying on meaningful content. Lorem ipsum
@@ -69,7 +80,7 @@ const TeamContainer = () => {
                   <span className="entitle">Digital Marketing</span>
                 </div>
                 <div className="profileDesc-r2">
-                  <p>
+                  <p className="Paragraph-justification">
                     In publishing and graphic design, Lorem ipsum is a
                     placeholder text commonly used to demonstrate the visual
                     form of a document or a typeface without relying on
@@ -78,8 +89,21 @@ const TeamContainer = () => {
                 </div>
                 <div className="profileDesc-r3">
                   <div className="socialMedia-links">
-                    <FaInstagram />
-                    <FaFacebookSquare />
+                    <div className="flex gap-6">
+                      <a href={FacebookLink}>
+                        <Facebook/>
+                      </a>
+                      <a href={Instagram}>
+                        <Instagram/>
+                      </a>
+                      <a href={LinkedInLink}>
+                        <LinkedIn/>
+                      </a>
+                      <a href={YoutubeLink}>
+                        <Youtube/>
+                      </a>
+                      
+                    </div>
                   </div>
                 </div>
               </div>
@@ -94,7 +118,7 @@ const TeamContainer = () => {
                     <p className="usrname">Anjali Shrestha</p>
                     <span className="entitle">Content Creator</span>
                   </div>
-                  <div className="profileDesc-r2">
+                  <div className="profileDesc-r2  ">
                     <p>
                       In publishing and graphic design, Lorem ipsum is a
                       placeholder text commonly used to demonstrate the visual
@@ -104,8 +128,21 @@ const TeamContainer = () => {
                   </div>
                   <div className="profileDesc-r3">
                     <div className="socialMedia-links">
-                      <FaInstagram />
-                      <FaFacebookSquare />
+                    <div className="flex gap-6">
+                      <a href={FacebookLink}>
+                        <Facebook/>
+                      </a>
+                      <a href={Instagram}>
+                        <Instagram/>
+                      </a>
+                      <a href={LinkedInLink}>
+                        <LinkedIn/>
+                      </a>
+                      <a href={YoutubeLink}>
+                        <Youtube/>
+                      </a>
+                      
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -131,8 +168,21 @@ const TeamContainer = () => {
                   </div>
                   <div className="profileDesc-r3">
                     <div className="socialMedia-links">
-                      <FaInstagram />
-                      <FaFacebookSquare />
+                    <div className="flex gap-6">
+                      <a href={FacebookLink}>
+                        <Facebook/>
+                      </a>
+                      <a href={Instagram}>
+                        <Instagram/>
+                      </a>
+                      <a href={LinkedInLink}>
+                        <LinkedIn/>
+                      </a>
+                      <a href={YoutubeLink}>
+                        <Youtube/>
+                      </a>
+                      
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -158,8 +208,21 @@ const TeamContainer = () => {
                   </div>
                   <div className="profileDesc-r3">
                     <div className="socialMedia-links">
-                      <FaInstagram />
-                      <FaFacebookSquare />
+                    <div className="flex gap-6">
+                      <a href={FacebookLink}>
+                        <Facebook/>
+                      </a>
+                      <a href={Instagram}>
+                        <Instagram/>
+                      </a>
+                      <a href={LinkedInLink}>
+                        <LinkedIn/>
+                      </a>
+                      <a href={YoutubeLink}>
+                        <Youtube/>
+                      </a>
+                      
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -185,8 +248,21 @@ const TeamContainer = () => {
                   </div>
                   <div className="profileDesc-r3">
                     <div className="socialMedia-links">
-                      <FaInstagram />
-                      <FaFacebookSquare />
+                    <div className="flex gap-6">
+                      <a href={FacebookLink}>
+                        <Facebook/>
+                      </a>
+                      <a href={Instagram}>
+                        <Instagram/>
+                      </a>
+                      <a href={LinkedInLink}>
+                        <LinkedIn/>
+                      </a>
+                      <a href={YoutubeLink}>
+                        <Youtube/>
+                      </a>
+                      
+                    </div>
                     </div>
                   </div>
                 </div>

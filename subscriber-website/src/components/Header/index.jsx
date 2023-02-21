@@ -4,9 +4,9 @@ import Image from "../../assets/site-logo.png";
 import { useRef } from "react";
 import { useState } from "react";
 // import 'font-awesome/css/font-awesome.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import './index.css'
+import "./index.css";
 const Header = () => {
   const [Menu, setMenu] = useState(true);
   const [subMenu1, setSubMenu1] = useState(false);
@@ -26,15 +26,13 @@ const Header = () => {
   };
 
   const [isClicked, setClicked] = useState("none");
-    const setInquiryContainer = () => {
-      
-      if(isClicked === 'none'){
-        return setClicked("block");
-      }
-      else{
-        return setClicked("none");
-      }
+  const setInquiryContainer = () => {
+    if (isClicked === "none") {
+      return setClicked("block");
+    } else {
+      return setClicked("none");
     }
+  };
 
   //   function handleHeaderColor() {
   //     if (menu) {
@@ -129,7 +127,9 @@ const Header = () => {
       }
     >
       <div className="logo translate-y-4 lg:translate-y-0 lg:translate-x-28">
-      <NavLink to={"/"} ><img src={Image} alt="" height="90px" width="90px" /></NavLink>  
+        <NavLink to={"/"}>
+          <img src={Image} alt="" height="90px" width="90px" />
+        </NavLink>
       </div>
       {Menu && (
         <div className="lg:flex lg:w-[80%] w-screen  Navmenu  transition duration-200 ">
@@ -157,7 +157,7 @@ const Header = () => {
                 className="menu-services menu-item  text-xl px-4"
               >
                 <NavLink to="/service">Services</NavLink>
-                {subMenu1 && (
+                {/* {subMenu1 && (
                   <div
                     className=" sub-menu z-10 bg-white  p-4 
                   shadow-xl lg:absolute lg:left-[-250px] transition duration-300  lg:h-fit pb-4 h-fit   lg:invisible lg:opacity-0 lg:translate-y-[2.5rem] "
@@ -223,7 +223,7 @@ const Header = () => {
                       </ul>
                     </div>
                   </div>
-                )}
+                )} */}
               </li>
               <li
                 onClick={() =>
@@ -243,12 +243,12 @@ const Header = () => {
                     onMouseOver={() => setSubMenu1(true)}
                     onMouseLeave={() => setSubMenu1(false)}
                     className=" sub-menu rounded z-10 
-                  shadow-xl p-4 bg-white lg:rounded  lg:absolute  lg:h-[200px] lg:left-[-400px]
+                  shadow-xl p-4 bg-white lg:rounded  lg:absolute  lg:h-[200px] lg:left-[-250px] 
                    lg:invisible lg:opacity-0 lg:translate-y-[2.5rem]  "
                   >
-                    <div className = "w-[1200px]">
+                    <div className="w-[700px]">
                       <hr className="p-1 border-t-2 " />
-                      <ul className="pl-4 font-bold text-black text-lg lg:grid lg:grid-cols-3">
+                      <ul className="pl-4 font-bold text-black text-lg lg:grid lg:grid-cols-2">
                         <li>
                           <a href="">Web Development pakages</a>
                           <p className="text-sm font-light ">
@@ -256,19 +256,19 @@ const Header = () => {
                             and make up the bulk of the card's content.
                           </p>
                         </li>
-                        <span className="h-40 opacity-10 rounded-xl w-[2px] mt-2 bg-black left-[33%] absolute"></span>
+                        {/* <span className="h-40 opacity-10 rounded-xl w-[2px] mt-2 bg-black left-[33%] absolute"></span> */}
 
-                        <li>
+                        {/* <li>
                           <a href="">Digital marketing pakages</a>
                           <p className="text-sm font-light ">
                             Some quick example text to build on the card title
                             and make up the bulk of the card's content.
                           </p>
-                        </li>
-                        <span className="h-40 opacity-10 rounded-xl w-[2px] mt-2 bg-black left-[65%] absolute"></span>
+                        </li> */}
+                        {/* <span className="h-40 opacity-10 rounded-xl w-[2px] mt-2 bg-black left-[65%] absolute"></span> */}
 
                         <li>
-                          <a href="">Youtube Subsription packages</a>
+                          <a href=""> Subsription packages</a>
                           <p className="text-sm font-light ">
                             Some quick example text to build on the card title
                             and make up the bulk of the card's content.
@@ -296,50 +296,51 @@ const Header = () => {
               >
                 <NavLink to="/about">About us</NavLink>
                 {subMenu3 && (
-                    <div  onMouseOver={() => setSubMenu1(true)}
+                  <div
+                    onMouseOver={() => setSubMenu1(true)}
                     onMouseLeave={() => setSubMenu1(false)}
                     className="sub-menu
                     shadow-xl lg:rounded z-10  p-4 bg-white lg:absolute  lg:left-[-600px]  lg:h-[200px] 
-                        lg:opacity-1 lg:translate-y-[2.5rem] ">
-                          <div className="w-[1200px]">
-                    <hr className="p-1 border-t-2 " />
-                    <ul className="pl-4 font-bold text-lg text-black lg:grid lg:grid-cols-4 lg:gap-10">
-                      <li>
-                        <a href="">Introduction</a>
-                        <p className="text-sm font-light ">
-                          Some quick example text to build on the card title and
-                          make up the bulk of the card's content.
-                        </p>
-                      </li>
-                      <span className="h-40 opacity-10 rounded-xl w-[2px] mt-2 bg-black left-[25%] absolute"></span>
-                      <li>
-                        <a href="">How we work</a>
-                        <p className="text-sm font-light ">
-                          Some quick example text to build on the card title and
-                          make up the bulk of the card's content.
-                        </p>
-                      </li>
-                      <span className="h-40 w-[2px] opacity-10 rounded-xl mt-2 bg-black left-[50%] absolute"></span>
+                        lg:opacity-1 lg:translate-y-[2.5rem] "
+                  >
+                    <div className="w-[1200px]">
+                      <hr className="p-1 border-t-2 " />
+                      <ul className="pl-4 font-bold text-lg text-black lg:grid lg:grid-cols-4 lg:gap-10">
+                        <li>
+                          <a href="">Introduction</a>
+                          <p className="text-sm font-light ">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                          </p>
+                        </li>
+                        <span className="h-40 opacity-10 rounded-xl w-[2px] mt-2 bg-black left-[25%] absolute"></span>
+                        <li>
+                          <a href="">How we work</a>
+                          <p className="text-sm font-light ">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                          </p>
+                        </li>
+                        <span className="h-40 w-[2px] opacity-10 rounded-xl mt-2 bg-black left-[50%] absolute"></span>
 
-                      <li>
-                        <a href="">Our Activities</a>
-                        <p className="text-sm font-light ">
-                          Some quick example text to build on the card title and
-                          make up the bulk of the card's content.
-                        </p>
-                      </li>
-                      <span className="h-40 w-[2px] opacity-10 rounded-xl mt-2 bg-black left-[75%] absolute"></span>
-                      <li>
-                        <a href="/team">Our Team</a>
-                        <p className="text-sm font-light ">
-                          Some quick example text to build on the card title and
-                          make up the bulk of the card's content.
-                        </p>
-                      </li>
-                    </ul>
+                        <li>
+                          <a href="">Our Activities</a>
+                          <p className="text-sm font-light ">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                          </p>
+                        </li>
+                        <span className="h-40 w-[2px] opacity-10 rounded-xl mt-2 bg-black left-[75%] absolute"></span>
+                        <li>
+                          <a href="/team">Our Team</a>
+                          <p className="text-sm font-light ">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                        </div>
-                  
                 )}
               </li>
               <li className="menu-careers menu-item  text-xl px-4">
@@ -349,93 +350,121 @@ const Header = () => {
                 <NavLink to="/contact">Contact us</NavLink>
               </li>
             </ul>
-            
           </div>
-          <div className='wrapper'style={{display: `${isClicked}`}} >
-      {/* `${isClicked}` */}
-       <div className="InquiryContainer" >
-                    <div className="InquiryContainer-Header">
-                      <button className="CloseForm" onClick={setInquiryContainer}><i className="fa-solid fa-xmark"></i></button>
-                    </div>
-                    <div className="InquiryContainer-Body">
-                      <div className="Body-left">
-                            <div className="left-r-1">
-                              <p className="p-1">We would love to hear from you</p>
-                              <p className="p-2">Get in touch</p>
-                            </div>
-                            <div className="left-r-2">
-                            
-                              <div className="left-col">
-                              <div className="left-col-wrapper">
-                              <div className="left-icon"><i class="fa-solid fa-location-dot"></i></div>
-                                <div className="info">
-                                <h1>Office Address</h1>
-                                <p>Butwal-4, Anything you like</p>
-                                </div>
-                              </div>
-                              </div>
-                              <div className="left-col">
-                              <div className="left-col-wrapper">
-                              <div className="left-icon"><i class="fa-solid fa-phone"></i></div>
-                                
-                                <div className="info">
-                                <h1>Our Phone Number</h1>
-                                <p>+977 980000xxxx</p>
-                                <p>+075 98xxxx</p>
-                                <p>+977 98665555xx</p>
-                                </div>
-                              </div>
-                              </div>
-                              <div className="left-col">
-                              <div className="left-col-wrapper">
-                              <div className="left-icon"><i class="fa-solid fa-envelope"></i></div>
-                              <div className="info">
-                                <h1>Our Email</h1>
-                                <p>info@subscriber.com</p>
-                                <p>support@subscriber.com</p>
-                                <p>contact@subscriber.com</p>
-                                </div>
-                              </div>
-                              </div>
-                            </div>
+          <div className="wrapper" style={{ display: `${isClicked}` }}>
+            {/* `${isClicked}` */}
+            <div className="InquiryContainer">
+              <div className="InquiryContainer-Header">
+                <button className="CloseForm" onClick={setInquiryContainer}>
+                  <i className="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+              <div className="InquiryContainer-Body">
+                <div className="Body-left ">
+                  <div className="left-r-1">
+                    <p className="p-1">We would love to hear from you</p>
+                    <p className="p-2">Get in touch</p>
+                  </div>
+                  <div className="left-r-2">
+                    <div className="left-col">
+                      <div className="left-col-wrapper">
+                        <div className="left-icon">
+                          <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div className="info">
+                          <h1>Office Address</h1>
+                          <p>Butwal-4, Anything you like</p>
+                        </div>
                       </div>
-                      <div className="Body-right">
-                      <div className="right-r-1">
-                              <p className="p-1">Have a project in mind?</p>
-                              <p className="p-2">Tell us a bit more</p>
-                            </div>
-                            <div className="right-r-2">
-                              <form className="form-list">
-                                <div className="form-r-1">
-                                  <input type='text' placeholder="Fullname *" name='name' required={true}/>
-                                  <input type='email' placeholder="Email *" name='email' required={true} />
-                                </div>
-                                <div className="form-r-2">
-                                <input type='text' placeholder="Phone no *" name='phone' required={true}/>
-                                  <input type='email' placeholder="Subject *" name='subject' required={true} />
-                                </div>
-                                <div className="form-r-3">
-                                  <textarea placeholder="Message *" rows="30"/>
-                                </div>
-                                <div className="form-r-4">
-                                  <input type='submit' value='Submit'/>
+                    </div>
+                    <div className="left-col">
+                      <div className="left-col-wrapper">
+                        <div className="left-icon">
+                          <i class="fa-solid fa-phone"></i>
+                        </div>
 
-                                </div>
-                            
-                              </form>
+                        <div className="info">
+                          <h1>Our Phone Number</h1>
+                          <p>+977 980000xxxx</p>
+                          <p>+075 98xxxx</p>
+                          <p>+977 98665555xx</p>
+                        </div>
                       </div>
-                      </div>
-                      
                     </div>
-                    <div className="InquiryContainer-Footer"></div>
-       </div>
-               
-        </div>
-          <div className="lg:translate-x-[-9rem]  lg:absolute lg:right-0 lg:top-2  translate-x-0 p-3">
-            <button onClick={setInquiryContainer} className="header-Btn lg:text-black border-2 border-red-500 font-semibold text-white lg:bg-white lg:hover:bg-red-500 lg:hover:text-white transition duration-200 bg-red-600 px-4 py-3 rounded-3xl">
+                    <div className="left-col">
+                      <div className="left-col-wrapper">
+                        <div className="left-icon">
+                          <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div className="info">
+                          <h1>Our Email</h1>
+                          <p>info@subscriber.com</p>
+                          <p>support@subscriber.com</p>
+                          <p>contact@subscriber.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="Body-right">
+                  <div className="right-r-1">
+                    <p className="p-1">Have a project in mind?</p>
+                    <p className="p-2">Tell us a bit more</p>
+                  </div>
+                  <div className="right-r-2">
+                    <form className="form-list">
+                      <div className="form-r-1">
+                        <input
+                          type="text"
+                          placeholder="Fullname *"
+                          name="name"
+                          required={true}
+                        />
+                        <input
+                          type="email"
+                          placeholder="Email *"
+                          name="email"
+                          required={true}
+                        />
+                      </div>
+                      <div className="form-r-2">
+                        <input
+                          type="text"
+                          placeholder="Phone no *"
+                          name="phone"
+                          required={true}
+                        />
+                        <input
+                          type="email"
+                          placeholder="Subject *"
+                          name="subject"
+                          required={true}
+                        />
+                      </div>
+                      <div className="form-r-3">
+                        <textarea placeholder="Message *" rows="30" />
+                      </div>
+                      <div className="form-r-4">
+                        <input
+                          className="form-submit rounded-xl hover:text-white "
+                          type="submit"
+                          value="Submit"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div className="InquiryContainer-Footer"></div>
+            </div>
+          </div>
+          <div className="lg:translate-x-[-9rem] hidden lg:block  lg:absolute lg:right-0 lg:top-2  translate-x-0 p-3">
+            <button
+              onClick={setInquiryContainer}
+              className="header-Btn lg:text-black border-2 border-red-500 font-semibold text-white lg:bg-white lg:hover:bg-red-500 lg:hover:text-white transition duration-200 bg-red-600 px-4 py-3 rounded-3xl"
+            >
               Join with us
             </button>
-            
           </div>
         </div>
       )}
@@ -452,12 +481,8 @@ const Header = () => {
             fill="white"
           />
         </svg>
-        
       </div>
-      
-      
     </header>
-    
   );
 };
 

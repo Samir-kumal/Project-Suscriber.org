@@ -13,7 +13,7 @@ const AboutUs_Layout = () => {
       <Header />
       <div className="AboutUs_section w-full h-[600px] lg:flex">
         <div className="flex flex-col   lg:w-[50%]">
-          <div className="lg:translate-y-16  translate-y-[18rem]">
+          <div className="lg:translate-y-16  translate-y-[4rem]">
             <lottie-player
               src="https://assets7.lottiefiles.com/packages/lf20_xt3zjwah.json"
               background="transparent"

@@ -1,6 +1,16 @@
 import React from "react";
 import Header from "../../components/Header";
-
+import ContentWriter from "../../Images/Career Image/writer.png";
+import LaravelDeveloper from "../../Images/Career Image/php.png";
+import LogoDesigner from "../../Images/Career Image/logo-design.png";
+import Photographer from "../../Images/Career Image/photographer.png";
+import GraphicsDesigner from "../../Images/Career Image/graphic-designer.png";
+import WebDeveloper from "../../Images/Career Image/designer.png";
+import "./index.css"
+import Footer from "../../components/Footer";
+import Facebook from "../../assets/elements/Facebook";
+import Twitter from "../../assets/elements/Twitter";
+import Whatsapp from "../../assets/elements/Whatsapp";
 const CareerContainer = () => {
   return (
     <div>
@@ -28,78 +38,106 @@ const CareerContainer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-slate-300 h-fit">
-        <div className="h-20 flex justify-center items-center w-full lg:w-[92%] m-auto bg-slate-500">
+      <div className="w-full  h-fit">
+        <div className="h-20 flex justify-center items-center w-full lg:w-[92%] m-auto ">
           <h1 className="text-4xl font-bold">Our Job Vacancy</h1>
         </div>
-        <div className=" w-fit h-fit grid items-end m-auto bg-slate-800 ">
+        <div className=" w-fit h-fit grid items-end m-auto  ">
           <div className="grid px-28 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-center gap-[4rem] ">
-            <div className="h-[500px] w-[300px] rounded-xl bg-pink-300 flex items-end">
-                <div>
-                    <img src="" alt="" />
+            <div className="h-[500px] w-[300px] rounded-xl grid bg-slate-400  items-end">
+                <div className="flex justify-center items-center">
+                    <img src={ContentWriter} className ="Career-images" alt="" />
                 </div>
-              <div className="h-[250px] w-[300px] rounded-xl bg-pink-500">
+              <div className="h-[250px] w-[300px] Career-description   rounded-xl bg-white">
                 <h1  className="Job-title font-bold text-2xl">Content Writer</h1>
-                <p>
-                  Functional Title: Marketing member Corporate Title: Marketing
-                  member No. of Vacancies: 1 Posted date : Feb 07, 2023 View
-                  Detail
+                <p className="Career-paragraph">
+                  <p>Functional Title: Marketing member </p>
+                  <p>Corporate Title: Marketing</p>
+                  <p>Member No. of Vacancies: 1</p>
+                  <p>Posted date : Feb 07, 2023</p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
-            <div className="h-[500px] w-[300px] rounded-xl bg-pink-300 flex items-end">
-              <div className="h-[250px] w-[300px] rounded-xl bg-pink-500">
+            <div className="h-[500px] w-[300px] rounded-xl bg-slate-400 grid items-end">
+            <div className="flex justify-center items-center">
+                    <img src={LaravelDeveloper} className ="Career-images" alt="" />
+                </div>
+              <div className="h-[250px] w-[300px] Career-description rounded-xl bg-white">
                 <h1  className="Job-title font-bold text-2xl">Laravel Developer</h1>
-                <p>
-                  Functional Title: Marketing member Corporate Title: Marketing
-                  member No. of Vacancies: 1 Posted date : Feb 07, 2023 View
-                  Detail
+                <p className="Career-paragraph">
+                  <p>Functional Title: Marketing member </p>
+                  <p>Corporate Title: Marketing</p>
+                  <p>Member No. of Vacancies: 1</p>
+                  <p>Posted date : Feb 07, 2023</p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
-            <div className="h-[500px] w-[300px] rounded-xl bg-pink-300 flex items-end">
-              <div className="h-[250px] w-[300px] rounded-xl bg-pink-500">
+            <div className="h-[500px] w-[300px] rounded-xl bg-slate-400 grid items-end">
+            <div className="flex justify-center items-center">
+                    <img src={GraphicsDesigner} className ="Career-images" alt="" />
+                </div>
+              <div className="h-[250px] w-[300px] Career-description rounded-xl bg-white">
                 <h1  className="Job-title font-bold text-2xl">Graphics Designer</h1>
-                <p>
-                  Functional Title: Marketing member Corporate Title: Marketing
-                  member No. of Vacancies: 1 Posted date : Feb 07, 2023 View
-                  Detail
+                <p className="Career-paragraph">
+                  <p>Functional Title: Marketing member </p>
+                  <p>Corporate Title: Marketing</p>
+                  <p>Member No. of Vacancies: 1</p>
+                  <p>Posted date : Feb 07, 2023</p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
-            <div className="h-[500px] w-[300px] rounded-xl bg-pink-300 flex items-end">
-              <div className="h-[250px] w-[300px] rounded-xl bg-pink-500">
+            <div className="h-[500px] w-[300px] rounded-xl bg-slate-400 grid items-end">
+            <div className="flex justify-center items-center">
+                    <img src={LogoDesigner} className ="Career-images" alt="" />
+                </div>
+              <div className="h-[250px] w-[300px] Career-description rounded-xl bg-white">
                 <h1  className="Job-title font-bold text-2xl">Logo Designing</h1>
-                <p>
-                  Functional Title: Marketing member Corporate Title: Marketing
-                  member No. of Vacancies: 1 Posted date : Feb 07, 2023 View
-                  Detail
+                <p className="Career-paragraph">
+                  <p>Functional Title: Marketing member </p>
+                  <p>Corporate Title: Marketing</p>
+                  <p>Member No. of Vacancies: 1</p>
+                  <p>Posted date : Feb 07, 2023</p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
-            <div className="h-[500px] w-[300px] rounded-xl bg-pink-300 flex items-end">
-              <div className="h-[250px] w-[300px] rounded-xl bg-pink-500">
+            <div className="h-[500px] w-[300px] rounded-xl bg-slate-400 grid items-end">
+            <div className="flex justify-center items-center">
+                    <img src={WebDeveloper} className ="Career-images" alt="" />
+                </div>
+              <div className="h-[250px] w-[300px] Career-description rounded-xl bg-white">
                 <h1  className="Job-title font-bold text-2xl">Web Designer</h1>
-                <p>
-                  Functional Title: Marketing member Corporate Title: Marketing
-                  member No. of Vacancies: 1 Posted date : Feb 07, 2023 View
-                  Detail
+                <p className="Career-paragraph">
+                  <p>Functional Title: Marketing member </p>
+                  <p>Corporate Title: Marketing</p>
+                  <p>Member No. of Vacancies: 1</p>
+                  <p>Posted date : Feb 07, 2023</p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
-            <div className="h-[500px] w-[300px] rounded-xl bg-pink-300 flex items-end">
-              <div className="h-[250px] w-[300px] rounded-xl bg-pink-500">
+            <div className="h-[500px] w-[300px] rounded-xl bg-slate-400 grid items-end">
+            <div className="flex justify-center items-center">
+                    <img src={Photographer} className ="Career-images" alt=""  />
+                </div>
+              <div className="h-[250px] w-[300px] Career-description rounded-xl bg-white">
                 <h1  className="Job-title font-bold text-2xl">Photographer</h1>
-                <p>
-                  Functional Title: Marketing member Corporate Title: Marketing
-                  member No. of Vacancies: 1 Posted date : Feb 07, 2023 View
-                  Detail
+                <p className="Career-paragraph">
+                  <p>Functional Title: Marketing member </p>
+                  <p>Corporate Title: Marketing</p>
+                  <p>Member No. of Vacancies: 1</p>
+                  <p>Posted date : Feb 07, 2023</p>
+                   <p className="font-bold">Contact: <div className="flex justify-center gap-6"><a href=""><Facebook/></a> <a href=""><Whatsapp/></a></div></p>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

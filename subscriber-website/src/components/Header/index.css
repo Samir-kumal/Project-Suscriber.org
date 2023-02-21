@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     transition: 1s ease-in-out;
+    color: rgb(255, 255, 255) !important;
     
 }
 .InquiryContainer{
@@ -33,21 +34,23 @@
 .InquiryContainer-Body{
     width: 100%;
         height: 93vh;
-        background-color: green;
+        background-color: #EA6F75;
         display: flex;
+        
 }
 .InquiryContainer-Body .Body-left{
     
         width: 45%;
         height: inherit;
-        background-color: yellowgreen;
+        /* background-color: #F87171; */
+        background-color: #F87171;
         /* border: 1px solid black; */
 
 }
 .InquiryContainer-Body .Body-right{
         width: 55%;
         height: inherit;
-        background-color: yellowgreen;
+        background-color: #F87171;
         /* border: 1px solid black; */
 }
 
@@ -62,9 +65,7 @@
     justify-content: center;
     
 }
-.CloseForm:hover{
-    border: 1px solid black;
-}
+
 .CloseForm .fa-solid{
     font-size: 2rem;
     color: white;
@@ -164,7 +165,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 4px;
     overflow-y: auto;
 }
 .right-r-2 .form-r-1{
@@ -188,17 +189,19 @@
     padding-left: 1.2rem;
     border: none;
     outline: none;
+    border-radius: 6px;
+    color: black;
     
     
 }
 .form-r-1 input:focus{
-    border: 2px solid green;
+    border: 2px solid #ff557a;
 }
 .form-r-2 input:focus{
-    border: 2px solid green;
+    border: 2px solid #ff557a;
 }
 .form-r-3 textarea:focus{
-    border: 2px solid green;
+    border: 2px solid #ff557a;
 }
 .form-r-2{
     width: 45vw;
@@ -209,6 +212,7 @@
     width: 45vw;
     height: 30vh;
     background-color: green;
+    border-radius: 4px;
 }
 .form-r-3 textarea{
     width: inherit;
@@ -216,6 +220,8 @@
     outline: none;
     padding-left: 1.2rem;
     padding-top: 1.2rem;
+    border-radius: 4px;
+    color: black;
 }
 .form-r-4{
     width: 45vw;
@@ -233,8 +239,13 @@
     transition: 0.3s ease-in;
 }
 .form-r-4 input:hover{
+  
+    background-color: #f41d1d;
+ 
+}
+.form-r-4 .form-submit input:hover{
     
-    background-color: rgb(244, 29, 29);
-    color: black;
+    background-color: #f41d1d;
+    color: rgb(255, 255, 255);
 }
 

@@ -17,15 +17,21 @@
     
     /* background-color: purple; */
     width: 100%;
-    height: 30vh;
+    height: fit-content;
     top: 7rem;
     position: relative;
     display: flex;
     justify-content: center;
     gap: 5rem;
     align-items: center;
+    margin-bottom: 3rem;
 
 }
+.Paragraph-justification{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
 
 .left{
     width: 50vh;
@@ -149,6 +155,7 @@
 }
 .profileDesc-r2 p{
     text-align: justify;
+    
 }
 .profileDesc .profileDesc-r3 .socialMedia-links{
     display: flex;
@@ -232,6 +239,7 @@
 .right .r1-desc{
     padding: 10px;
     text-align: justify;
+    
 }
 .line{
     display: none;
