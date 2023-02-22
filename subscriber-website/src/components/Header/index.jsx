@@ -5,6 +5,11 @@ import { useRef } from "react";
 import { useState } from "react";
 // import 'font-awesome/css/font-awesome.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import emailjs from '@emailjs/browser';
+
+
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import "./index.css";
 const Header = () => {
@@ -115,6 +120,33 @@ const Header = () => {
       setSubMenu1(false);
       console.log("submenu did changed");
     }
+  };
+
+   const form = useRef();
+  const [message,setMessage] = useState([]);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0r8y555', 'template_004d889', form.current, '4o-pAqPSMxC0xUwtz')
+      .then((result) => {
+          console.log(result.text);
+          setMessage(()=>{
+            toast.success('Successfully sent!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+          });
+          e.target.reset();
+          return message;
+      }, (error) => {
+          console.log(error.message);
+      });
   };
 
   return (
@@ -413,18 +445,18 @@ const Header = () => {
                     <p className="p-2">Tell us a bit more</p>
                   </div>
                   <div className="right-r-2">
-                    <form className="form-list">
+                    <form ref={form} onSubmit={sendEmail} className="form-list">
                       <div className="form-r-1">
                         <input
                           type="text"
                           placeholder="Fullname *"
-                          name="name"
+                          name="user_name"
                           required={true}
                         />
                         <input
                           type="email"
                           placeholder="Email *"
-                          name="email"
+                          name="user_email"
                           required={true}
                         />
                       </div>
@@ -432,13 +464,13 @@ const Header = () => {
                         <input
                           type="text"
                           placeholder="Phone no *"
-                          name="phone"
+                          name="user_phone"
                           required={true}
                         />
                         <input
-                          type="email"
+                          type="text"
                           placeholder="Subject *"
-                          name="subject"
+                          name="user_subject"
                           required={true}
                         />
                       </div>
@@ -453,6 +485,7 @@ const Header = () => {
                         />
                       </div>
                     </form>
+                    <ToastContainer/>
                   </div>
                 </div>
               </div>
