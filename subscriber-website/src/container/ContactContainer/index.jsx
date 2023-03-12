@@ -14,42 +14,14 @@ import Instagram from "../../assets/elements/Instagram";
 import LinkedIn from "../../assets/elements/LinkedIn";
 import Youtube from "../../assets/elements/Youtube";
 import Twitter from "../../assets/elements/Twitter";
+import { ContactUs } from "../FormContainer";
 import Footer2 from "../../components/Footer2";
 const ContactContainer = () => {
-  const [result, setResult] = useState({});
-  const [isSending, setSending] = useState(false);
-  const [isError, setError] = useState(false);
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phoneno: "",
-    subject: "",
-    message: "",
-  });
-
   let FacebookLink = "https://www.facebook.com/suscribernepal";
   let TwitterLink = "https://twitter.com/";
   let InstagramLink = "https://www.instagram.com/samer_kumal/";
   let LinkedInLink = "https://www.linkedin.com/";
   let YoutubeLink = "https://www.youtube.com/";
-
-  const [formSubmitted, setFormSubmitted] = useState(false);
-
-  const handleInputChange = (event) => {
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
-    });
-  };
-
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    setFormSubmitted(true);
-    const res = await Service.Contact(formData);
-    const { data } = res;
-    setResult(data);
-  };
   // console.log(formData.name, formData.email,formData.phoneno,formData.subject, formData.message);
 
   return (
@@ -159,69 +131,7 @@ const ContactContainer = () => {
             </div>
           </div>
           <div className="w-[50%] ">
-            <form onSubmit={handleFormSubmit}>
-              <h1 className="m-4 translate-x-12 text-2xl font-bold"></h1>
-              <div className="form-fillup w-full lg:w-[600px]  m-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
-                <div className="w-screen lg:w-[95%]">
-                  <input
-                    className="w-[95%] "
-                    type="text"
-                    name="name"
-                    required={true}
-                    onChange={handleInputChange}
-                    placeholder="Full name"
-                  />
-                </div>
-                <div className="w-screen lg:w-[95%]">
-                  <input
-                    className="w-[95%] "
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                    required={true}
-                    onChange={handleInputChange}
-                  />
-                </div>
-                <div className="w-screen lg:w-[95%]">
-                  {" "}
-                  <input
-                    className="w-[95%] "
-                    type="text"
-                    placeholder="Phone"
-                    name="phoneno"
-                    onChange={handleInputChange}
-                  />
-                </div>
-                <div className="w-screen lg:w-[95%]">
-                  {" "}
-                  <input
-                    className="  w-[95%] "
-                    type="text"
-                    placeholder="Subject"
-                    name="subject"
-                    onChange={handleInputChange}
-                  />
-                </div>
-              </div>
-              <div className="w-screen lg:w-[95%]">
-                <textarea
-                  className="text-comment w-[95%] p-3 mx-4"
-                  name="message"
-                  placeholder="Write us a message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                />
-                {isSending}
-                <input
-                  className="inputField mx-4
-                   my-6 text-xl font-bold hover:bg-red-600
-                    transition duration-200  bg-red-400 py-4
-                     px-10 text-white rounded-xl w-[95%]"
-                  type="submit"
-                  value="Submit"
-                />
-              </div>
-            </form>
+           <ContactUs/>
           </div>
         </div>
         {/* <div className=" translate-y-16 bg-black h-20 p-4 w-10 m-auto"></div> */}
