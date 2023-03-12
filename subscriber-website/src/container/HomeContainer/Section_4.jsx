@@ -61,13 +61,16 @@ const Section_4 = () => {
       <p className="ml-4 font-semibold font-serif text-gray-700">What our client's say about us</p>
       <Slider  ref={sliderRef} {...settings}>
         
-        <div className="p-4" style={{display:"flex", gap:"5rem"}}>
+        <div className="p-4 h-[500px] w-[400px]" style={{display:"flex", gap:"5rem"}}>
         <div className="card card_testimonials ">
           <img className="card-img-top" src={Ravi} alt="Person 1" />
           <br />
           <div className="card-body ">
             <h5>Ravi Lamichane<span>- Home Minister</span></h5>
-            <p className="pt-2">Suscriber.org has a great sevice, i have been their customer and am planning to be in future too</p>
+            <p className="pt-2">
+            "I have been a loyal customer of this company for years and I can't recommend them enough! From their top-notch digital marketing services to their stunning photography and UI/UX design, they have helped me take my business to the next level.
+              "
+              </p>
           </div>
         </div>
         </div>
@@ -77,7 +80,10 @@ const Section_4 = () => {
           <br />
           <div className="card-body">
             <h5>Prachanda <span>- Prime Minister</span></h5>
-            <p className="pt-2">Suscriber.org has a great sevice, i have been their customer and am planning to be in future too</p>
+            <p className="pt-2">
+            "I can't say enough good things about this company. Their branding and web design services helped me establish a strong online presence, while their subscription and digital marketing services allowed me to connect with my audience and grow my business.
+             "
+              </p>
 
           </div>
         </div>
@@ -88,7 +94,9 @@ const Section_4 = () => {
           <br />
           <div className="card-body">
             <h5>Deuba<span>- EX- PM</span></h5>
-            <p className="pt-2">Suscriber.org has a great sevice, i have been their customer and am planning to be in future too</p>
+            <p className="pt-2">
+            "I've been a subscriber to this company's YouTube channel for a while now and I am blown away by the value they provide. Their subscription services are not only affordable, but also packed with exclusive content that has helped me take my business to the next level.
+              </p>
 
           </div>
         </div>
@@ -99,7 +107,9 @@ const Section_4 = () => {
           <br />
           <div className="card-body">
             <h5>KP. Oli<span>- Guffadi Budo</span></h5>
-            <p className="pt-2">Suscriber.org has a great sevice, i have been their customer and am planning to be in future too</p>
+            <p className="pt-2">
+            Their online reception services have also been a game changer for my business, allowing me to focus on what matters most. Overall, their services are top-notch and their team is a pleasure to work with. Highly recommended!" 
+              </p>
 
           </div>
         </div>

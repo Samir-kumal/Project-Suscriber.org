@@ -1,0 +1,51 @@
+.privacypolicy_section{
+    background-image: url(../../Images/ContactBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    text-shadow:  2px 2px 10px rgba(0, 0, 0, 0.2);
+  
+  }
+  .privacypolicy_section p{
+  text-align: justify;
+
+  }
+  .main_title{
+    position: relative;
+    width: fit-content;
+
+  }
+
+  .main_title::before{
+    content: "";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    background: #000;
+    left: -4rem;
+
+    top: 40%;
+  }
+  .main_title::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    background: #000;
+    right: -4rem;
+
+    top: 40%;
+  }
+  .header_title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  @media screen and (max-width:1024px) {
+    .header_title{
+        font-size: 1rem;
+    }
+    .privacypolicy_section p{
+        font-size: .7rem;
+    }
+   
+  }

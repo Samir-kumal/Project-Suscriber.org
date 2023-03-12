@@ -2,6 +2,11 @@ import React, { useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Image from "../../assets/site-logo.png";
 import { useRef } from "react";
+import WebDevelopment from "../../assets/Header Logo Packages/web.png";
+import Subscription from "../../assets/Header Logo Packages/subscription.png";
+import Introduction from "../../assets/Header Logo Packages/handshake.png";
+import Work from "../../assets/Header Logo Packages/workflow.png";
+import Team from "../../assets/Header Logo Packages/man.png";
 import { useState } from "react";
 // import 'font-awesome/css/font-awesome.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -75,12 +80,10 @@ const Header = () => {
       if (window.scrollY >= 80) {
         if (window.innerWidth <= 1024 || window.innerWidth > 1024) {
           setNavbar(true);
-          console.log("true");
         }
       } else {
         if (window.innerWidth <= 1024 || window.innerWidth > 1024) {
           setNavbar(false);
-          console.log("false");
         }
       }
     };
@@ -95,6 +98,7 @@ const Header = () => {
 
   if (
     location.pathname === "/about" ||
+    location.pathname === "/pricing" ||
     location.pathname === "/career" ||
     location.pathname === "/portfolio" ||
     location.pathname === "/contact" ||
@@ -103,6 +107,10 @@ const Header = () => {
     navbarStyle = { backgroundColor: "transparent" };
   } else if (location.pathname === "/") {
     navbarStyle = { backgroundColor: "transparent" };
+  } else if (location.pathname === "/PrivacyPolicy") {
+    navbarStyle = { color: "#000" };
+  } else if (location.pathname === "/Terms&condition") {
+    navbarStyle = { color: "#000" };
   } else {
     navbarStyle = { backgroundColor: "#fff" };
   }
@@ -134,8 +142,8 @@ const Header = () => {
       {Menu && (
         <div className="lg:flex lg:w-[80%] w-screen  Navmenu  transition duration-200 ">
           <div className="menu flex   items-center   ">
-            <ul className="menu-items lg:items-center  lg:flex  xl:gap-[5px] lg:gap-0">
-              <li className="menu-home menu-item  main-home text-xl px-2">
+            <ul className="menu-items lg:items-center lg:flex lg:translate-x-4  xl:gap-[2px] lg:gap-0">
+              <li className="menu-home menu-item   main-home text-xl px-2">
                 <NavLink to="/">Home</NavLink>
               </li>
               <li
@@ -156,7 +164,7 @@ const Header = () => {
                 }
                 className="menu-services menu-item  text-xl px-4"
               >
-                <NavLink to="/service">Services</NavLink>
+                <NavLink to="/career">Services</NavLink>
                 {/* {subMenu1 && (
                   <div
                     className=" sub-menu z-10 bg-white  p-4 
@@ -237,26 +245,40 @@ const Header = () => {
                 }
                 className="menu-pricing menu-item  text-xl px-4"
               >
-                <NavLink to="/work">Pricing</NavLink>
+                <NavLink to="/pricing">Pricing</NavLink>
                 {subMenu2 && (
                   <div
                     onMouseOver={() => setSubMenu1(true)}
                     onMouseLeave={() => setSubMenu1(false)}
                     className=" sub-menu rounded z-10 
-                  shadow-xl p-4 bg-white lg:rounded  lg:absolute  lg:h-[200px] lg:left-[-250px] 
+                  shadow-xl p-6  bg-white lg:rounded-xl  lg:absolute  lg:h-[390px] lg:left-[-300px] 
                    lg:invisible lg:opacity-0 lg:translate-y-[2.5rem]  "
                   >
                     <div className="w-[700px]">
                       <hr className="p-1 border-t-2 " />
-                      <ul className="pl-4 font-bold text-black text-lg lg:grid lg:grid-cols-2">
-                        <li>
-                          <a href="">Web Development pakages</a>
-                          <p className="text-sm font-light ">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
+                      <ul className="pl-4 font-bold text-black text-lg lg:grid gap-x-6 lg:grid-cols-2">
+                        <li className="relative ">
+                          <div className="mb-4">
+                            <img
+                              className="translate-x-8"
+                              src={WebDevelopment}
+                              alt=""
+                              height={150}
+                              width={150}
+                            />
+                          </div>
+                          {/* <img src="https://img.icons8.com/external-vectorslab-flat-vectorslab/53/null/external-Web-Development-seo-and-marketing-vectorslab-flat-vectorslab.png"height={80} width = {80} /> */}
+                          <NavLink to={"/pricing"}><p>Web Development pakages</p></NavLink>
+                          <p className="text-sm font-light text-justify ">
+                            Our packages are designed to provide end-to-end
+                            solutions, from design and development to hosting
+                            and maintenance, ensuring that your website stays
+                            up-to-date and fully functional. So why wait? Choose
+                            one of our web development packages today and take
+                            your business to the next level!
                           </p>
+                          <span className="h-[19rem] opacity-10 rounded-xl w-[2px] mt-2 bg-black top-0 -right-[0.7rem] absolute"></span>
                         </li>
-                        {/* <span className="h-40 opacity-10 rounded-xl w-[2px] mt-2 bg-black left-[33%] absolute"></span> */}
 
                         {/* <li>
                           <a href="">Digital marketing pakages</a>
@@ -268,10 +290,23 @@ const Header = () => {
                         {/* <span className="h-40 opacity-10 rounded-xl w-[2px] mt-2 bg-black left-[65%] absolute"></span> */}
 
                         <li>
-                          <a href=""> Subsription packages</a>
-                          <p className="text-sm font-light ">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
+                          <div className=" mb-4">
+                            <img
+                              className="translate-x-8"
+                              src={Subscription}
+                              alt=""
+                              height={150}
+                              width={150}
+                            />
+                          </div>
+                          <NavLink to={"/pricing"}><p>Subsription packages</p></NavLink>
+                          <p className="text-sm font-light text-justify ">
+                            Our packages are designed to provide end-to-end
+                            solutions, from design and development to hosting
+                            and maintenance, ensuring that your website stays
+                            up-to-date and fully functional. So why wait? Choose
+                            one of our web development packages today and take
+                            your business to the next level!
                           </p>
                         </li>
                       </ul>
@@ -300,42 +335,60 @@ const Header = () => {
                     onMouseOver={() => setSubMenu1(true)}
                     onMouseLeave={() => setSubMenu1(false)}
                     className="sub-menu
-                    shadow-xl lg:rounded z-10  p-4 bg-white lg:absolute  lg:left-[-600px]  lg:h-[200px] 
+                    shadow-xl lg:rounded-xl z-10  p-4 bg-white lg:absolute  lg:left-[-350px]  lg:h-[380px]  
                         lg:opacity-1 lg:translate-y-[2.5rem] "
                   >
-                    <div className="w-[1200px]">
+                    <div className="w-[800px]">
                       <hr className="p-1 border-t-2 " />
-                      <ul className="pl-4 font-bold text-lg text-black lg:grid lg:grid-cols-4 lg:gap-10">
-                        <li>
-                          <a href="">Introduction</a>
-                          <p className="text-sm font-light ">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
+                      <ul className="pl-4 font-bold text-lg text-black lg:grid lg:grid-cols-3 lg:gap-10">
+                        <li className="relative">
+                          {/* <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-bipartisan-politics-flaticons-lineal-color-flat-icons-2.png" height={80} width = {80} /> */}
+                          <div className=" mb-4">
+                            <img
+                              src={Introduction}
+                              alt=""
+                              width={120}
+                              height={120}
+                            />
+                          </div>
+                          <NavLink to={"/about"}><p>Introduction</p></NavLink>
+                          <p className="text-sm font-light text-justify ">
+                            Welcome to Subscriber Tech, your one-stop-shop for
+                            all your digital marketing needs! We are a leading
+                            digital marketing company dedicated to helping
+                            businesses of all sizes and industries succeed
+                            online.
                           </p>
+                          <span className="h-[19rem] opacity-10 rounded-xl w-[2px] mt-2 bg-black top-0 -right-4 absolute"></span>
                         </li>
-                        <span className="h-40 opacity-10 rounded-xl w-[2px] mt-2 bg-black left-[25%] absolute"></span>
-                        <li>
-                          <a href="">How we work</a>
-                          <p className="text-sm font-light ">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
+                        <li className="relative">
+                          {/* <img src="https://img.icons8.com/external-nawicon-flat-nawicon/64/null/external-Work-Process-business-management-nawicon-flat-nawicon.png" height={80} width = {80} />
+                           */}
+                          <div className=" mb-4">
+                            <img src={Work} alt="" width={120} height={120} />
+                          </div>
+                          <NavLink to={"/about"}><p>How we work</p></NavLink>
+                          <p className="text-sm font-light text-justify">
+                            At Subscriber Tech, we follow a comprehensive
+                            approach to deliver high-quality digital marketing
+                            solutions to our clients.Our proven process ensures
+                            that your solution is delivered on time, within
+                            budget, and to your complete satisfaction.
                           </p>
+                          <span className="h-[19rem] w-[2px] opacity-10 rounded-xl mt-2 bg-black top-0  -right-4 absolute"></span>
                         </li>
-                        <span className="h-40 w-[2px] opacity-10 rounded-xl mt-2 bg-black left-[50%] absolute"></span>
 
                         <li>
-                          <a href="">Our Activities</a>
-                          <p className="text-sm font-light ">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                        </li>
-                        <span className="h-40 w-[2px] opacity-10 rounded-xl mt-2 bg-black left-[75%] absolute"></span>
-                        <li>
-                          <a href="/team">Our Team</a>
-                          <p className="text-sm font-light ">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
+                          {/* <img src="https://img.icons8.com/office/64/null/conference-call.png" height={80} width = {80} /> */}
+                          <div className=" mb-4">
+                            <img src={Team} alt="" width={120} height={120} />
+                          </div>
+                          <NavLink to={"/team"}><p>Our Team</p></NavLink>
+                          <p className="text-sm font-light text-justify ">
+                            At Subscriber Tech, our team consists of a group of
+                            highly skilled and experienced professionals who are
+                            dedicated to providing our clients with the best
+                            possible digital marketing solutions.
                           </p>
                         </li>
                       </ul>
@@ -343,11 +396,22 @@ const Header = () => {
                   </div>
                 )}
               </li>
-              <li className="menu-careers menu-item  text-xl px-4">
+              {/* <li className="menu-careers menu-item  text-xl px-4">
                 <NavLink to="/career">Careers</NavLink>
-              </li>
+              </li> */}
               <li className="menu-contact menu-item  text-xl px-4">
                 <NavLink to="/contact">Contact us</NavLink>
+              </li>
+              <li className="menu-contact menu-item  text-xl px-4">
+                <NavLink>Blogs</NavLink>
+              </li>
+              <li>
+              <button
+              onClick={setInquiryContainer}
+              className="header-Btn lg:text-black  border-2 translate-y-0 translate-x-16  border-red-500 font-semibold text-white lg:bg-white lg:hover:bg-red-500 lg:hover:text-white transition duration-200 bg-red-600 px-4 py-3 rounded-3xl"
+            >
+              Join with us
+            </button>
               </li>
             </ul>
           </div>
@@ -369,7 +433,7 @@ const Header = () => {
                     <div className="left-col">
                       <div className="left-col-wrapper">
                         <div className="left-icon">
-                          <i class="fa-solid fa-location-dot"></i>
+                          <i className="fa-solid fa-location-dot"></i>
                         </div>
                         <div className="info">
                           <h1>Office Address</h1>
@@ -380,22 +444,27 @@ const Header = () => {
                     <div className="left-col">
                       <div className="left-col-wrapper">
                         <div className="left-icon">
-                          <i class="fa-solid fa-phone"></i>
+                          <i className="fa-solid fa-phone"></i>
                         </div>
 
                         <div className="info">
                           <h1>Our Phone Number</h1>
-                          <p>+977 <a href='tel:9815904119'>9815904119</a></p>
-                          <p>+977 <a href='tel:9866615358'>9866615358</a></p>
-                          <p>+977 <a href='tel:9806133772'>9806133772</a></p>
-                          
+                          <p>
+                            +977 <a href="tel:9815904119">9815904119</a>
+                          </p>
+                          <p>
+                            +977 <a href="tel:9866615358">9866615358</a>
+                          </p>
+                          <p>
+                            +977 <a href="tel:9806133772">9806133772</a>
+                          </p>
                         </div>
                       </div>
                     </div>
                     <div className="left-col">
                       <div className="left-col-wrapper">
                         <div className="left-icon">
-                          <i class="fa-solid fa-envelope"></i>
+                          <i className="fa-solid fa-envelope"></i>
                         </div>
                         <div className="info">
                           <h1>Our Email</h1>
@@ -459,18 +528,14 @@ const Header = () => {
               <div className="InquiryContainer-Footer"></div>
             </div>
           </div>
-          <div className="lg:translate-x-[-9rem] hidden lg:block  lg:absolute lg:right-0 lg:top-2  translate-x-0 p-3">
-            <button
-              onClick={setInquiryContainer}
-              className="header-Btn lg:text-black border-2 border-red-500 font-semibold text-white lg:bg-white lg:hover:bg-red-500 lg:hover:text-white transition duration-200 bg-red-600 px-4 py-3 rounded-3xl"
-            >
-              Join with us
-            </button>
-          </div>
+          {/* <div className=" lg:translate-x-[-9rem] hidden lg:block   absolute md:-right-40 lg:-right-12   lg:top-2 md:left-90  translate-x-0 p-3">
+            
+          </div> */}
         </div>
       )}
       <div onClick={Toggle} className="lg:hidden absolute top-8 right-12   ">
         <svg
+          className="Button_svg"
           width="40"
           height="30"
           viewBox="0 0 136 98"

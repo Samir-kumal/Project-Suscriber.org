@@ -24,7 +24,7 @@ const Section_1 = () => {
     <div>
       <section className="relative h-fit w-screen  ">
         <div className="main-landing flex relative w-[108%] h-[750px] bg-white">
-          <div className="absolute lg:w-[700px] right-10 bottom-0">
+          <div className="absolute lg:w-[700px] md:w-[600px] right-10 bottom-0">
             <lottie-player
               src="https://assets6.lottiefiles.com/packages/lf20_k0sUtnckyH.json"
               background="transparent"

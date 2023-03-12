@@ -7,6 +7,8 @@ import Section_4 from "./Section_4";
 import Section_5 from './Language_slider';
 import Recent_projects from "./Recent_projects";
 import Language_slider from "./Language_slider";
+import Footer2 from "../../components/Footer2";
+
 const HomeContainer = ( ) => {
     return(
         <>
@@ -20,7 +22,10 @@ const HomeContainer = ( ) => {
                     <Section_4/>
 
             </main>
-            <Footer/>
+
+            {/* <Footer/> */}
+            <Footer2/>
+
         </>
     );
 }

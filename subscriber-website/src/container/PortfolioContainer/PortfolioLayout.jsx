@@ -1,6 +1,8 @@
 import React from "react";
 import Footer from "../../components/Footer";
+import Footer2 from "../../components/Footer2";
 import Header from "../../components/Header";
+import "./index.css"
 
 const PortfolioLayout = () => {
   return (
@@ -27,7 +29,6 @@ const PortfolioLayout = () => {
   src="https://assets3.lottiefiles.com/private_files/lf30_wqypnpu5.json"  
   background="transparent"  
   speed="1"  
-  // style={{width: '500px', height: '500px'}}  
   loop  
   autoplay>
 </lottie-player>
@@ -55,26 +56,54 @@ const PortfolioLayout = () => {
 
           <div className="portfolio_card_list grid w-[85%] m-auto py-4 mb-4  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <div className="portfolio_card m-auto project-card w-[350px] h-[300px] " >
+              <div className="inner_card card_1">
+                <a href="">Website</a>
+              </div>
             </div>
             <div className="portfolio_card m-auto project-card w-[350px] h-[300px] " >
+            <div className="inner_card card_2">
+                <a href=""></a>
+              </div>
             </div>
             <div className="portfolio_card m-auto project-card w-[350px] h-[300px] " >
+            <div className="inner_card card_3">
+                <a href=""></a>
+              </div>
             </div>
             <div className="portfolio_card m-auto project-card w-[350px] h-[300px] " >
+            <div className="inner_card card_4">
+                <a href=""></a>
+              </div>
             </div>
             <div className="portfolio_card m-auto project-card w-[350px] h-[300px] " >
+            <div className="inner_card card_5">
+                <a href=""></a>
+              </div>
             </div>
             <div className="portfolio_card m-auto project-card w-[350px] h-[300px] " >
+            <div className="inner_card card_6">
+                <a href=""></a>
+              </div>
             </div>
             <div className="portfolio_card m-auto project-card w-[350px] h-[300px] " >
+            <div className="inner_card card_7">
+                <a href=""></a>
+              </div>
             </div>
             <div className="portfolio_card m-auto project-card w-[350px] h-[300px] " >
+            <div className="inner_card card_8">
+                <a href=""></a>
+              </div>
             </div>
             <div className="portfolio_card m-auto project-card w-[350px] h-[300px] " >
+            <div className="inner_card card_9">
+                <a href=""></a>
+              </div>
             </div>
           </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
+      <Footer2/>
     </div>
   );
 };

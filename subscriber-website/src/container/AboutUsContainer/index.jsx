@@ -7,13 +7,14 @@ import RequirementGathering from "../../Images/RequirementGathering.png";
 import DesignAndDevelopment from "../../Images/DesignandDevelopment.png";
 import QualityAssurance from "../../Images/QualityAssurance.png";
 import DeploymentAndMaintainance from "../../Images/DeploymentAndMaintainance.png";
+import Footer2 from "../../components/Footer2";
 const AboutUs_Layout = () => {
   return (
     <>
       <Header />
       <div className="AboutUs_section w-full h-[600px] lg:flex">
         <div className="flex flex-col   lg:w-[50%]">
-          <div className="lg:translate-y-16  translate-y-[4rem]">
+          <div className="lg:translate-y-16 lg:w-[680px] md:w-[650px] w-[400px] absolute   md:translate-y-[4rem] translate-y-[14rem]">
             <lottie-player
               src="https://assets7.lottiefiles.com/packages/lf20_xt3zjwah.json"
               background="transparent"
@@ -25,7 +26,7 @@ const AboutUs_Layout = () => {
         </div>
         <div className=" lg:w-[50%] flex absolute lg:static top-32 items-center justify-center flex-col ">
           <div className="translate-y-24">
-            <h1 className="text-4xl text-center lg:translate-x-0   translate-x-4 lg:text-6xl text-white font-semibold">
+            <h1 className="text-4xl text-center lg:translate-x-0 lg:block md:block hidden  translate-x-4 lg:text-6xl text-white font-semibold">
               Your Idea, Our Work
             </h1>
           </div>
@@ -207,7 +208,7 @@ const AboutUs_Layout = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer2 />
     </>
   );
 };

@@ -14,6 +14,7 @@ import Instagram from "../../assets/elements/Instagram";
 import LinkedIn from "../../assets/elements/LinkedIn";
 import Youtube from "../../assets/elements/Youtube";
 import Twitter from "../../assets/elements/Twitter";
+import Footer2 from "../../components/Footer2";
 const ContactContainer = () => {
   const [result, setResult] = useState({});
   const [isSending, setSending] = useState(false);
@@ -111,7 +112,7 @@ const ContactContainer = () => {
         </div>
       </div>
       <div className="h-fit Main-body-contact">
-        <div className=" h-fit  py-4">
+        <div className=" h-fit  py-6">
           <div className="m-auto flex   lg:w-[1250px]">
             <div className=" w-[50%] h-24 lg:h-[400px] flex justify-center   flex-col ">
               <div className="translate-y-12 lg:-translate-y-20 lg:translate-x-10">
@@ -133,16 +134,16 @@ const ContactContainer = () => {
               </div>
             </div>
 
-            <div className=" flex h-[380px] lg:-translate-y-16  justify-center w-[50%]">
+            <div className=" flex h-[300px] lg:-translate-y-16  justify-center w-[50%]">
               <img
-                className="translate-y-12 lg:static lg:top-[690px] right-0 -z-10 lg:z-0 h-[300px] absolute "
+                className="translate-y-12 lg:static lg:top-[690px] right-0 -z-10 lg:z-0 lg:h-[400px] md:h-[400px] h-[200px] absolute "
                 src={ContactusImage}
                 alt=""
               />
             </div>
           </div>
         </div>
-        <div className="lg:w-[1250px] h-fit lg:h-[550px] flex flex-col lg:flex-row   m-auto">
+        <div className="lg:w-[1250px] h-fit lg:h-[650px] flex flex-col lg:flex-row   m-auto">
           <div className="location-map relative lg:-translate-y-24   lg:w-[50%]">
             <div className=" w-full  lg:translate-x-2   lg:translate-y-8">
               <h1 className=" text-xl lg:text-3xl font-bold">Contact us</h1>
@@ -151,7 +152,7 @@ const ContactContainer = () => {
               </p>
             </div>
             <div className="flex lg:w-full  w-screen items-end  h-[90%] ">
-              <div  className=" h-[88%]  border-[2px] ml-2 w-[95%] rounded-lg border-red-400 flex">
+              <div  className=" h-[80%] -translate-y-16  border-[2px] ml-2 w-[95%] rounded-lg border-red-400 flex">
                 <Map/>
               </div>
               
@@ -225,7 +226,7 @@ const ContactContainer = () => {
         </div>
         {/* <div className=" translate-y-16 bg-black h-20 p-4 w-10 m-auto"></div> */}
       </div>
-      <Footer />
+      <Footer2 />
     </>
   );
 };

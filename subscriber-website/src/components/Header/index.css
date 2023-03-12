@@ -251,4 +251,15 @@
     background-color: #f41d1d;
     color: rgb(255, 255, 255);
 }
+.Header-Btn{
+    display: block;
+}
+
+@media screen and (min-width:1200px) {
+    .Header-Btn{
+        transform: translateX(-20px);
+    }
+}
+
+
 

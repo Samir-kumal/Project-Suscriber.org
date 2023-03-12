@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './index.css';
 import service from '../../service/newsletter';
 const Footer = () => {
   const [email,setEmail] =  useState('');
@@ -16,7 +17,7 @@ const Footer = () => {
   }
   return (
     <div>
-      <footer className="lg:h-[500px] text-black pt-8 w-full pb-8 bg-[#F48484]  flex items-center">
+      <footer className="lg:h-[500px] text-black pt-8 w-full pb-8  flex items-center">
       <div className="footer-content lg:translate-y-20 items-center grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 px-10   text-white w-full h-3/4 text-lg justify-center ">
         <div className="section-1 sm:pb-4">
           

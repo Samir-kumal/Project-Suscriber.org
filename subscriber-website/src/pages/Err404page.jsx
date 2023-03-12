@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Footer2 from '../components/Footer2'
 function Err404page() {
   return (
     <div>
@@ -17,7 +18,7 @@ function Err404page() {
                 </div>
                 </div>
                 </main>
-    <Footer/>
+    <Footer2/>
       
     </div>
   )

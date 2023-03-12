@@ -1,0 +1,18 @@
+footer{
+    background-image: url(./Images/updated_footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #F48484;
+  }
+  footer .section-1{
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  @media screen and (max-width:1024px) {
+    footer .section-1{
+      text-shadow: none;
+      font-family: sans-serif;
+      color: black;
+    }
+  }

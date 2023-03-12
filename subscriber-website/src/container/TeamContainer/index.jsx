@@ -11,6 +11,7 @@ import Facebook from "../../assets/elements/Facebook";
 import Instagram from "../../assets/elements/Instagram";
 import LinkedIn from "../../assets/elements/LinkedIn";
 import Youtube from "../../assets/elements/Youtube";
+import Footer2 from "../../components/Footer2";
 
 const TeamContainer = () => {
 
@@ -271,7 +272,7 @@ const TeamContainer = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 };
