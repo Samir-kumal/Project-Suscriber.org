@@ -42,7 +42,7 @@ const AboutUs_Layout = () => {
           <div className="flex lg:flex-row flex-col-reverse items-center">
             <div className=" w-full lg:w-[50%] lg:pr-10 lg:translate-x-16">
               <h1 className="text-5xl text-red-600 font-bold font-serif">
-                Suscriber,
+                Asperthick,
               </h1>
               <p className=" Paragraph-justification lg:text-md lg:w-3/4 w-full pt-4">
                 Initially started from 4 members in Propose to help many digital

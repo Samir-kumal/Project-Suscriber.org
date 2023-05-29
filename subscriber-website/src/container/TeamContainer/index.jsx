@@ -71,7 +71,7 @@ const TeamContainer = () => {
         </div>
         <div className="team_info">
           <div className="team-r1">
-            <div className="profileInfo">
+            {/* <div className="profileInfo">
               <div className="ImageBox">
                 <img src={img1} alt="usr-1" />
               </div>
@@ -148,7 +148,7 @@ const TeamContainer = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="profileInfo">
               <div className="ImageBox">
                 <img src={img3} alt="usr-1" />

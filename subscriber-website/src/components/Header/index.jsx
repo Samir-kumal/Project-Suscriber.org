@@ -44,25 +44,6 @@ const Header = () => {
     }
   };
 
-  //   function handleHeaderColor() {
-  //     if (menu) {
-  //       header.style.backgroundColor = "white";
-  //     } else {
-  //       header.style.backgroundColor = "transparent";
-  //     }
-  //     if (window.scrollY > 80) {
-  //       header.style.backgroundColor = "red";
-  //     }
-  //   }
-
-  // let menu = false;
-  // document.querySelector(".menu-button").addEventListener("click", () => {
-  //   menu = !menu;
-  //   handleHeaderColor();
-  // });
-
-  // window.addEventListener("scroll", handleHeaderColor);
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 1024) {
@@ -168,7 +149,7 @@ const Header = () => {
     >
       <div className="logo translate-y-4 lg:translate-y-0 lg:translate-x-28">
         <NavLink to={"/"}>
-          <img src={Image} alt="" height="90px" width="90px" />
+          <img src="https://png.pngtree.com/png-clipart/20190604/original/pngtree-borders-logo-png-image_1524188.jpg" alt="LOGO" height="90px" width="90px" />
         </NavLink>
       </div>
       {Menu && (
@@ -385,7 +366,7 @@ const Header = () => {
                           </div>
                           <NavLink to={"/about"}><p>Introduction</p></NavLink>
                           <p className="text-sm font-light text-justify ">
-                            Welcome to Subscriber Tech, your one-stop-shop for
+                            Welcome to us Tech, your one-stop-shop for
                             all your digital marketing needs! We are a leading
                             digital marketing company dedicated to helping
                             businesses of all sizes and industries succeed
@@ -401,7 +382,7 @@ const Header = () => {
                           </div>
                           <NavLink to={"/about"}><p>How we work</p></NavLink>
                           <p className="text-sm font-light text-justify">
-                            At Subscriber Tech, we follow a comprehensive
+                            At here we follow a comprehensive
                             approach to deliver high-quality digital marketing
                             solutions to our clients.Our proven process ensures
                             that your solution is delivered on time, within
@@ -417,7 +398,7 @@ const Header = () => {
                           </div>
                           <NavLink to={"/team"}><p>Our Team</p></NavLink>
                           <p className="text-sm font-light text-justify ">
-                            At Subscriber Tech, our team consists of a group of
+                            our team consists of a group of
                             highly skilled and experienced professionals who are
                             dedicated to providing our clients with the best
                             possible digital marketing solutions.
@@ -500,9 +481,9 @@ const Header = () => {
                         </div>
                         <div className="info">
                           <h1>Our Email</h1>
-                          <p>info@subscriber.com</p>
-                          <p>support@subscriber.com</p>
-                          <p>contact@subscriber.com</p>
+                          <p>info@us.com</p>
+                          <p>support@us.com</p>
+                          <p>contact@us.com</p>
                         </div>
                       </div>
                     </div>

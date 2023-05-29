@@ -17,7 +17,7 @@ import Twitter from "../../assets/elements/Twitter";
 import { ContactUs } from "../FormContainer";
 import Footer2 from "../../components/Footer2";
 const ContactContainer = () => {
-  let FacebookLink = "https://www.facebook.com/suscribernepal";
+  let FacebookLink = "https://www.facebook.com/";
   let TwitterLink = "https://twitter.com/";
   let InstagramLink = "https://www.instagram.com/samer_kumal/";
   let LinkedInLink = "https://www.linkedin.com/";
@@ -101,7 +101,7 @@ const ContactContainer = () => {
                 </p>
                 <p className="w-screen text-lg lg:text-lg py-1">
                   {" "}
-                  Email : suscriber@gmail.com
+                  Email : kumalsameer124@gmail.com
                 </p>
               </div>
             </div>
